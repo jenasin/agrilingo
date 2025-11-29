@@ -44,6 +44,34 @@
             to { transform: translateY(0); opacity: 1; }
         }
         .glow { box-shadow: 0 0 20px rgba(34, 197, 94, 0.5); }
+
+        /* Konfety animace */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            top: -10px;
+            animation: confetti-fall 3s ease-out forwards;
+        }
+        @keyframes confetti-fall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+        .star-burst {
+            animation: starBurst 0.6s ease-out;
+        }
+        @keyframes starBurst {
+            0% { transform: scale(0) rotate(-180deg); opacity: 0; }
+            50% { transform: scale(1.3) rotate(0deg); opacity: 1; }
+            100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+        .float-up {
+            animation: floatUp 0.5s ease-out;
+        }
+        @keyframes floatUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
     </style>
 </head>
 <body class="bg-gradient-to-b from-green-50 to-green-100 min-h-screen">
@@ -63,7 +91,6 @@
             const [xp, setXp] = useState(0);
             const [totalXp, setTotalXp] = useState(0);
             const [streak, setStreak] = useState(0);
-            const [gems, setGems] = useState(100);
             const [showAnswer, setShowAnswer] = useState(false);
             const [selectedAnswer, setSelectedAnswer] = useState(null);
             const [levelProgress, setLevelProgress] = useState({});
@@ -76,7 +103,6 @@
                 if (saved) {
                     const data = JSON.parse(saved);
                     setTotalXp(data.totalXp || 0);
-                    setGems(data.gems || 100);
                     setStreak(data.streak || 0);
                     setLevelProgress(data.levelProgress || {});
                     setDailyXp(data.dailyXp || 0);
@@ -87,9 +113,9 @@
             // Uložit data
             useEffect(() => {
                 localStorage.setItem('agrolinguo_save', JSON.stringify({
-                    totalXp, gems, streak, levelProgress, dailyXp, hearts
+                    totalXp, streak, levelProgress, dailyXp, hearts
                 }));
-            }, [totalXp, gems, streak, levelProgress, dailyXp, hearts]);
+            }, [totalXp, streak, levelProgress, dailyXp, hearts]);
 
             // Vypočítat level hráče
             const playerLevel = Math.floor(totalXp / 100) + 1;
@@ -234,10 +260,7 @@
 
             // Resetovat srdíčka
             const refillHearts = () => {
-                if (gems >= 50) {
-                    setGems(g => g - 50);
-                    setHearts(5);
-                }
+                setHearts(5);
             };
 
             // Header komponenta
@@ -247,18 +270,18 @@
                         <span className="text-2xl">🌿</span>
                         <span className="font-bold text-green-700">AgroLinguo</span>
                     </div>
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-3">
                         <div className="flex items-center gap-1 bg-red-100 px-3 py-1 rounded-full">
                             <span>❤️</span>
                             <span className="font-bold text-red-600">{hearts}</span>
                         </div>
-                        <div className="flex items-center gap-1 bg-yellow-100 px-3 py-1 rounded-full">
-                            <span>💎</span>
-                            <span className="font-bold text-yellow-600">{gems}</span>
-                        </div>
                         <div className="flex items-center gap-1 bg-orange-100 px-3 py-1 rounded-full">
                             <span>🔥</span>
                             <span className="font-bold text-orange-600">{streak}</span>
+                        </div>
+                        <div className="flex items-center gap-1 bg-yellow-100 px-3 py-1 rounded-full">
+                            <span>⭐</span>
+                            <span className="font-bold text-yellow-600">{totalXp} XP</span>
                         </div>
                     </div>
                 </div>
@@ -518,58 +541,109 @@
                 );
             };
 
+            // Konfety komponenta
+            const Confetti = () => {
+                const colors = ['#ff6b6b', '#4ecdc4', '#ffe66d', '#95e1d3', '#f38181', '#aa96da', '#fcbad3'];
+                const confettiPieces = Array.from({length: 50}, (_, i) => ({
+                    id: i,
+                    left: Math.random() * 100,
+                    delay: Math.random() * 2,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    size: Math.random() * 10 + 5
+                }));
+
+                return (
+                    <div className="fixed inset-0 pointer-events-none overflow-hidden z-50">
+                        {confettiPieces.map(piece => (
+                            <div
+                                key={piece.id}
+                                className="confetti"
+                                style={{
+                                    left: `${piece.left}%`,
+                                    animationDelay: `${piece.delay}s`,
+                                    backgroundColor: piece.color,
+                                    width: `${piece.size}px`,
+                                    height: `${piece.size}px`,
+                                    borderRadius: Math.random() > 0.5 ? '50%' : '0'
+                                }}
+                            />
+                        ))}
+                    </div>
+                );
+            };
+
             // Obrazovka výsledků
             const ResultsScreen = () => {
                 const questions = getQuestionsForLevel(selectedModule, selectedLevel);
                 const percentage = Math.round((score / questions.length) * 100);
                 const stars = percentage >= 90 ? 3 : percentage >= 70 ? 2 : percentage >= 50 ? 1 : 0;
                 const module = modules.find(m => m.id === selectedModule);
+                const isWin = stars >= 1;
+
+                // Přejít na další level
+                const goToNextLevel = () => {
+                    if (isWin && selectedLevel < 10) {
+                        startLevel(selectedModule, selectedLevel + 1);
+                    } else {
+                        startLevel(selectedModule, selectedLevel);
+                    }
+                };
 
                 return (
-                    <div className="min-h-screen bg-gradient-to-b from-green-50 to-green-100 flex flex-col items-center justify-center p-4">
-                        <div className="bg-white rounded-3xl p-8 shadow-2xl text-center max-w-sm w-full bounce-in">
-                            <div className="text-6xl mb-4">
-                                {stars >= 2 ? '🎉' : stars === 1 ? '👍' : '💪'}
+                    <div className="h-screen bg-gradient-to-b from-green-50 to-green-100 flex flex-col overflow-hidden">
+                        {/* Konfety při výhře */}
+                        {isWin && <Confetti />}
+
+                        {/* Hlavní obsah */}
+                        <div className="flex-1 flex flex-col items-center justify-center p-4 relative z-10">
+                            <div className={`text-8xl mb-2 ${isWin ? 'star-burst' : ''}`}>
+                                {stars >= 2 ? '🏆' : stars === 1 ? '🎉' : '💪'}
                             </div>
-                            <h2 className="text-2xl font-bold text-gray-800 mb-2">
+
+                            <h2 className="text-3xl font-bold text-gray-800 mb-4">
                                 {stars >= 2 ? 'Výborně!' : stars === 1 ? 'Dobrá práce!' : 'Zkus to znovu!'}
                             </h2>
 
-                            <div className="flex justify-center gap-2 my-4">
+                            <div className="flex justify-center gap-4 mb-6">
                                 {[1,2,3].map(s => (
-                                    <span key={s} className={`text-4xl ${s <= stars ? 'bounce-in' : 'opacity-30'}`} style={{animationDelay: `${s * 0.2}s`}}>
+                                    <span
+                                        key={s}
+                                        className={`text-5xl ${s <= stars ? 'star-burst' : 'opacity-20'}`}
+                                        style={{animationDelay: `${0.3 + s * 0.15}s`}}
+                                    >
                                         ⭐
                                     </span>
                                 ))}
                             </div>
 
-                            <div className="bg-gray-100 rounded-2xl p-4 mb-4">
-                                <div className="grid grid-cols-2 gap-4">
-                                    <div>
-                                        <div className="text-3xl font-bold text-green-600">{score}/{questions.length}</div>
-                                        <div className="text-sm text-gray-500">Správných</div>
+                            <div className="bg-white/80 backdrop-blur rounded-2xl p-5 shadow-lg">
+                                <div className="grid grid-cols-2 gap-8">
+                                    <div className="text-center">
+                                        <div className="text-4xl font-bold text-green-600">{score}/{questions.length}</div>
+                                        <div className="text-sm text-gray-500 mt-1">Správných</div>
                                     </div>
-                                    <div>
-                                        <div className="text-3xl font-bold text-yellow-600">+{xp + (stars * 5)}</div>
-                                        <div className="text-sm text-gray-500">XP</div>
+                                    <div className="text-center">
+                                        <div className="text-4xl font-bold text-yellow-600">+{xp + (stars * 5)}</div>
+                                        <div className="text-sm text-gray-500 mt-1">XP</div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div className="flex gap-3">
-                                <button
-                                    onClick={() => setScreen('levels')}
-                                    className="flex-1 bg-gray-200 text-gray-700 py-3 rounded-xl font-bold"
-                                >
-                                    Zpět
-                                </button>
-                                <button
-                                    onClick={() => startLevel(selectedModule, selectedLevel)}
-                                    className={`flex-1 bg-gradient-to-r ${module.color} text-white py-3 rounded-xl font-bold`}
-                                >
-                                    Znovu
-                                </button>
-                            </div>
+                        {/* Tlačítka fixně dole */}
+                        <div className="p-4 bg-white border-t shadow-lg slide-up">
+                            <button
+                                onClick={goToNextLevel}
+                                className={`w-full py-5 rounded-2xl font-bold text-xl text-white shadow-lg mb-3 bg-gradient-to-r ${module.color}`}
+                            >
+                                {isWin ? (selectedLevel < 10 ? '🚀 Další level' : '🔄 Hrát znovu') : '🔄 Zkusit znovu'}
+                            </button>
+                            <button
+                                onClick={() => setScreen('levels')}
+                                className="w-full py-3 rounded-xl font-bold text-gray-600 bg-gray-100"
+                            >
+                                Zpět na přehled
+                            </button>
                         </div>
                     </div>
                 );
@@ -577,23 +651,18 @@
 
             // Game Over obrazovka
             const GameOverScreen = () => (
-                <div className="min-h-screen bg-gradient-to-b from-red-50 to-red-100 flex flex-col items-center justify-center p-4">
+                <div className="h-screen bg-gradient-to-b from-red-50 to-red-100 flex flex-col items-center justify-center p-4">
                     <div className="bg-white rounded-3xl p-8 shadow-2xl text-center max-w-sm w-full bounce-in">
                         <div className="text-6xl mb-4">💔</div>
                         <h2 className="text-2xl font-bold text-gray-800 mb-2">Došla ti srdíčka!</h2>
-                        <p className="text-gray-500 mb-6">Počkej nebo použij drahokamy k doplnění</p>
+                        <p className="text-gray-500 mb-6">Nevzdávej to, zkus to znovu!</p>
 
                         <div className="space-y-3">
                             <button
-                                onClick={refillHearts}
-                                disabled={gems < 50}
-                                className={`w-full py-3 rounded-xl font-bold flex items-center justify-center gap-2 ${
-                                    gems >= 50
-                                        ? 'bg-gradient-to-r from-purple-500 to-purple-600 text-white'
-                                        : 'bg-gray-200 text-gray-400'
-                                }`}
+                                onClick={() => { refillHearts(); startLevel(selectedModule, selectedLevel); }}
+                                className="w-full py-4 rounded-xl font-bold text-lg bg-gradient-to-r from-green-500 to-green-600 text-white shadow-lg"
                             >
-                                <span>💎</span> Doplnit za 50 drahokamů
+                                ❤️ Zkusit znovu
                             </button>
                             <button
                                 onClick={() => setScreen('home')}
