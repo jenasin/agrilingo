@@ -1140,3 +1140,6 @@ const MODULE3_QUESTIONS = {
         }
     ]
 };
+
+// Export do window
+window.MODULE3_QUESTIONS = MODULE3_QUESTIONS;

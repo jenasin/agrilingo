@@ -121,3 +121,6 @@ const MODULE5_QUESTIONS = {
         { question: "Budoucnost mechanizace směřuje k:", type: "multiple_choice", options: [{ text: "Automatizaci, elektrifikaci, preciznosti", icon: "🎯", isCorrect: true }, { text: "Více manuální práce", icon: "✋", isCorrect: false }, { text: "Konci mechanizace", icon: "⛔", isCorrect: false }, { text: "Pouze velkým strojům", icon: "🚜", isCorrect: false }], explanation: "Inovace povedou k udržitelnější a efektivnější produkci." }
     ]
 };
+
+// Export do window
+window.MODULE5_QUESTIONS = MODULE5_QUESTIONS;

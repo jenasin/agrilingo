@@ -140,3 +140,6 @@ const MODULE4_QUESTIONS = {
         { question: "Budoucnost závlah směřuje k:", type: "multiple_choice", options: [{ text: "Efektivitě, recyklaci, chytrým systémům", icon: "🎯", isCorrect: true }, { text: "Plýtvání vodou", icon: "💦", isCorrect: false }, { text: "Zrušení zavlažování", icon: "⛔", isCorrect: false }, { text: "Pouze tradičním metodám", icon: "📜", isCorrect: false }], explanation: "Inovace a udržitelnost budou klíčem k zajištění produkce potravin." }
     ]
 };
+
+// Export do window
+window.MODULE4_QUESTIONS = MODULE4_QUESTIONS;

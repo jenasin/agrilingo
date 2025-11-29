@@ -121,3 +121,6 @@ const MODULE6_QUESTIONS = {
         { question: "Budoucnost zemědělství:", type: "multiple_choice", options: [{ text: "Regenerativní, precizní, lokální, spravedlivé", icon: "🌱", isCorrect: true }, { text: "Více chemie", icon: "🧪", isCorrect: false }, { text: "Bez farmářů", icon: "🤖", isCorrect: false }, { text: "Žádná", icon: "❌", isCorrect: false }], explanation: "Udržitelná budoucnost vyžaduje transformaci celého systému." }
     ]
 };
+
+// Export do window
+window.MODULE6_QUESTIONS = MODULE6_QUESTIONS;
