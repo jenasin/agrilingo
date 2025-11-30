@@ -1,19 +1,19 @@
 const CACHE_NAME = 'agrolinguo-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/questions.js',
-  '/questions_module1.js',
-  '/questions_module2.js',
-  '/questions_module3.js',
-  '/questions_module4.js',
-  '/questions_module5.js',
-  '/questions_module6.js',
-  '/questions_module7.js',
-  '/questions_module8.js',
-  '/questions_module9.js',
-  '/questions_module10.js',
-  '/manifest.json'
+  './',
+  './index.html',
+  './questions.js',
+  './questions_module1.js',
+  './questions_module2.js',
+  './questions_module3.js',
+  './questions_module4.js',
+  './questions_module5.js',
+  './questions_module6.js',
+  './questions_module7.js',
+  './questions_module8.js',
+  './questions_module9.js',
+  './questions_module10.js',
+  './manifest.json'
 ];
 
 // Install event - cache files

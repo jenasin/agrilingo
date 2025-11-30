@@ -2,7 +2,7 @@
   "name": "AgroLinguo - Learn Farming",
   "short_name": "AgroLinguo",
   "description": "Educational farming quiz app",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#10B981",
   "theme_color": "#10B981",
