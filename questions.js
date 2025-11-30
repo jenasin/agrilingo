@@ -1,45 +1,44 @@
-// AgroLinguo - Hlavní loader otázek
-// Tento soubor kombinuje všechny moduly otázek
+// AgroLinguo - Main Questions Loader
+// This file combines all question modules
 
-// Inicializace ALL_QUESTIONS - moduly se načtou před tímto skriptem
 (function() {
-    // Funkce pro vytvoření ALL_QUESTIONS
     function initQuestions() {
+        // Check if at least first 3 modules are loaded (the English ones)
         if (window.MODULE1_QUESTIONS &&
             window.MODULE2_QUESTIONS &&
-            window.MODULE3_QUESTIONS &&
-            window.MODULE4_QUESTIONS &&
-            window.MODULE5_QUESTIONS &&
-            window.MODULE6_QUESTIONS) {
+            window.MODULE3_QUESTIONS) {
 
             window.ALL_QUESTIONS = {
-                1: window.MODULE1_QUESTIONS,  // Půda a Základy
-                2: window.MODULE2_QUESTIONS,  // Ochrana Rostlin
-                3: window.MODULE3_QUESTIONS,  // Sklizeň a Prodej
-                4: window.MODULE4_QUESTIONS,  // Zavlažování
-                5: window.MODULE5_QUESTIONS,  // Mechanizace
-                6: window.MODULE6_QUESTIONS   // Ekologie
+                1: window.MODULE1_QUESTIONS,   // Soil & Basics
+                2: window.MODULE2_QUESTIONS,   // Plant Protection
+                3: window.MODULE3_QUESTIONS,   // Harvest & Sales
+                4: window.MODULE4_QUESTIONS || {},  // Irrigation
+                5: window.MODULE5_QUESTIONS || {},  // Farm Machinery
+                6: window.MODULE6_QUESTIONS || {},  // Ecology
+                7: window.MODULE7_QUESTIONS || {},  // Livestock
+                8: window.MODULE8_QUESTIONS || {},  // Fertilization
+                9: window.MODULE9_QUESTIONS || {},  // Weather & Climate
+                10: window.MODULE10_QUESTIONS || {} // Specialty Crops
             };
 
-            console.log('AgroLinguo: Všechny moduly načteny!');
-            console.log('Celkem modulů:', Object.keys(window.ALL_QUESTIONS).length);
+            console.log('AgroLinguo: Modules loaded!');
+            console.log('Total modules:', Object.keys(window.ALL_QUESTIONS).length);
 
-            // Spočítáme celkový počet otázek
             let totalQuestions = 0;
             for (const moduleId in window.ALL_QUESTIONS) {
                 for (const level in window.ALL_QUESTIONS[moduleId]) {
-                    totalQuestions += window.ALL_QUESTIONS[moduleId][level].length;
+                    if (Array.isArray(window.ALL_QUESTIONS[moduleId][level])) {
+                        totalQuestions += window.ALL_QUESTIONS[moduleId][level].length;
+                    }
                 }
             }
-            console.log('Celkem otázek:', totalQuestions);
+            console.log('Total questions:', totalQuestions);
             return true;
         }
         return false;
     }
 
-    // Zkusíme inicializovat okamžitě
     if (!initQuestions()) {
-        // Pokud moduly ještě nejsou načteny, počkáme na DOMContentLoaded
         window.addEventListener('DOMContentLoaded', function() {
             if (!window.ALL_QUESTIONS) {
                 const checkModules = function() {
@@ -53,7 +52,6 @@
     }
 })();
 
-// Pomocná funkce pro získání otázek pro daný modul a level
 function getQuestions(moduleId, level) {
     const key = `module${moduleId}_level${level}`;
     if (window.ALL_QUESTIONS && window.ALL_QUESTIONS[moduleId] && window.ALL_QUESTIONS[moduleId][key]) {
@@ -62,7 +60,6 @@ function getQuestions(moduleId, level) {
     return [];
 }
 
-// Pomocná funkce pro zamíchání pole
 function shuffleArray(array) {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {

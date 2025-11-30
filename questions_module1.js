@@ -1,1145 +1,1145 @@
-// Modul 1: Půda a Základy - 100 otázek (10 levelů x 10 otázek)
+// Module 1: Soil & Basics - 100 questions (10 levels x 10 questions)
 const MODULE1_QUESTIONS = {
-    // Level 1 - Základy půdy
-    module1_level1: [
+    // Level 1: Plant Basics
+    "module1_level1": [
         {
-            question: "Co je hlavní složkou zdravé půdy?",
-            type: "multiple_choice",
-            options: [
-                { text: "Humus", icon: "🌱", isCorrect: true },
-                { text: "Písek", icon: "🏖️", isCorrect: false },
-                { text: "Kámen", icon: "🪨", isCorrect: false },
-                { text: "Plast", icon: "🧴", isCorrect: false }
+            "question": "What part of plant makes food?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Stem", "icon": "", "isCorrect": false},
+                {"text": "Root", "icon": "", "isCorrect": false},
+                {"text": "Flower", "icon": "", "isCorrect": false},
+                {"text": "Leaf", "icon": "🍃", "isCorrect": true}
             ],
-            explanation: "Humus je rozložená organická hmota, která dodává půdě živiny a zlepšuje její strukturu."
+            "explanation": "Leaves make food through photosynthesis using sunlight."
         },
         {
-            question: "Jaká je ideální hodnota pH pro většinu plodin?",
-            type: "multiple_choice",
-            options: [
-                { text: "2-3 (velmi kyselé)", icon: "🍋", isCorrect: false },
-                { text: "6-7 (mírně kyselé až neutrální)", icon: "✅", isCorrect: true },
-                { text: "10-12 (velmi zásadité)", icon: "🧪", isCorrect: false },
-                { text: "0-1 (extrémně kyselé)", icon: "⚠️", isCorrect: false }
+            "question": "What do plants need to grow?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Sand", "icon": "", "isCorrect": false},
+                {"text": "Water", "icon": "💧", "isCorrect": true},
+                {"text": "Stone", "icon": "", "isCorrect": false},
+                {"text": "Plastic", "icon": "", "isCorrect": false}
             ],
-            explanation: "Většina plodin roste nejlépe v mírně kyselé až neutrální půdě s pH 6-7."
+            "explanation": "Plants need water, sunlight, and nutrients to grow."
         },
         {
-            question: "Co znamená zkratka NPK?",
-            type: "multiple_choice",
-            options: [
-                { text: "Dusík, Fosfor, Draslík", icon: "🧪", isCorrect: true },
-                { text: "Nikl, Platina, Kobalt", icon: "⚗️", isCorrect: false },
-                { text: "Nový Pěstební Komplex", icon: "📦", isCorrect: false },
-                { text: "Národní Park Krkonoše", icon: "🏔️", isCorrect: false }
+            "question": "Which crop is a root crop?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Maize", "icon": "", "isCorrect": false},
+                {"text": "Cassava", "icon": "🥔", "isCorrect": true},
+                {"text": "Beans", "icon": "", "isCorrect": false},
+                {"text": "Rice", "icon": "", "isCorrect": false}
             ],
-            explanation: "NPK jsou tři základní živiny pro rostliny: Dusík (N), Fosfor (P) a Draslík (K)."
+            "explanation": "Cassava is a root crop - we eat the root part."
         },
         {
-            question: "Která vrstva půdy obsahuje nejvíce organické hmoty?",
-            type: "multiple_choice",
-            options: [
-                { text: "Ornice (vrchní vrstva)", icon: "🌱", isCorrect: true },
-                { text: "Podorničí", icon: "⬇️", isCorrect: false },
-                { text: "Matečná hornina", icon: "🪨", isCorrect: false },
-                { text: "Spodní voda", icon: "💧", isCorrect: false }
+            "question": "Good soil color is:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Dark brown", "icon": "🟤", "isCorrect": true},
+                {"text": "Blue", "icon": "", "isCorrect": false},
+                {"text": "White", "icon": "", "isCorrect": false},
+                {"text": "Red", "icon": "", "isCorrect": false}
             ],
-            explanation: "Ornice je vrchní vrstva půdy bohatá na organickou hmotu a mikroorganismy."
+            "explanation": "Dark brown soil is rich in organic matter and nutrients."
         },
         {
-            question: "Proč je důležité střídat plodiny na poli?",
-            type: "multiple_choice",
-            options: [
-                { text: "Pro zábavu farmáře", icon: "😄", isCorrect: false },
-                { text: "Aby se vyčerpaly živiny", icon: "📉", isCorrect: false },
-                { text: "Pro prevenci chorob a zlepšení půdy", icon: "✅", isCorrect: true },
-                { text: "Protože to nařizuje zákon", icon: "📜", isCorrect: false }
+            "question": "Which animal gives milk?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Chicken", "icon": "", "isCorrect": false},
+                {"text": "Cow", "icon": "🐄", "isCorrect": true},
+                {"text": "Rabbit", "icon": "", "isCorrect": false},
+                {"text": "Fish", "icon": "", "isCorrect": false}
             ],
-            explanation: "Střídání plodin zabraňuje hromadění škůdců a chorob a obnovuje živiny v půdě."
+            "explanation": "Cows provide milk for drinking and making dairy products."
         },
         {
-            question: "Co je kompost?",
-            type: "multiple_choice",
-            options: [
-                { text: "Chemické hnojivo", icon: "🧪", isCorrect: false },
-                { text: "Rozložená organická hmota", icon: "🌿", isCorrect: true },
-                { text: "Typ pesticidu", icon: "🐛", isCorrect: false },
-                { text: "Plastový materiál", icon: "🧴", isCorrect: false }
+            "question": "Which seed is used for rice?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Coffee", "icon": "", "isCorrect": false},
+                {"text": "Palm kernel", "icon": "", "isCorrect": false},
+                {"text": "Cocoa", "icon": "", "isCorrect": false},
+                {"text": "Paddy", "icon": "🌾", "isCorrect": true}
             ],
-            explanation: "Kompost je přírodní hnojivo vzniklé rozkladem organických materiálů jako listí, tráva a zbytky jídla."
+            "explanation": "Paddy is the rice seed before processing."
         },
         {
-            question: "Jaký typ půdy nejlépe zadržuje vodu?",
-            type: "multiple_choice",
-            options: [
-                { text: "Písčitá", icon: "🏖️", isCorrect: false },
-                { text: "Jílovitá", icon: "🧱", isCorrect: true },
-                { text: "Kamenitá", icon: "🪨", isCorrect: false },
-                { text: "Štěrkovitá", icon: "⚪", isCorrect: false }
+            "question": "First step before planting?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Harvesting", "icon": "", "isCorrect": false},
+                {"text": "Selling", "icon": "", "isCorrect": false},
+                {"text": "Cooking", "icon": "", "isCorrect": false},
+                {"text": "Land clearing", "icon": "🌿", "isCorrect": true}
             ],
-            explanation: "Jílovitá půda má velmi jemné částice, které dobře zadržují vodu, ale může být špatně propustná."
+            "explanation": "Clear the land of weeds and debris before planting."
         },
         {
-            question: "Co dělají žížaly v půdě?",
-            type: "multiple_choice",
-            options: [
-                { text: "Ničí kořeny rostlin", icon: "❌", isCorrect: false },
-                { text: "Provzdušňují půdu a tvoří humus", icon: "✅", isCorrect: true },
-                { text: "Jedí semena", icon: "🌰", isCorrect: false },
-                { text: "Nic užitečného", icon: "🤷", isCorrect: false }
+            "question": "Cutlass is used for:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Sleeping", "icon": "", "isCorrect": false},
+                {"text": "Drawing", "icon": "", "isCorrect": false},
+                {"text": "Cutting weeds", "icon": "🔪", "isCorrect": true},
+                {"text": "Cooking", "icon": "", "isCorrect": false}
             ],
-            explanation: "Žížaly jsou velmi užitečné - provzdušňují půdu svými chodbami a jejich trus je vynikající hnojivo."
+            "explanation": "A cutlass (machete) is used to cut weeds and clear land."
         },
         {
-            question: "Jak poznáme kyselou půdu bez měření?",
-            type: "multiple_choice",
-            options: [
-                { text: "Roste tam mech a šťovík", icon: "🌿", isCorrect: true },
-                { text: "Je tam hodně žížal", icon: "🪱", isCorrect: false },
-                { text: "Půda je červená", icon: "🔴", isCorrect: false },
-                { text: "Voní po citronech", icon: "🍋", isCorrect: false }
+            "question": "Which animal gives eggs?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Goat", "icon": "", "isCorrect": false},
+                {"text": "Chicken", "icon": "🐔", "isCorrect": true},
+                {"text": "Cow", "icon": "", "isCorrect": false},
+                {"text": "Sheep", "icon": "", "isCorrect": false}
             ],
-            explanation: "Mech, šťovík a přeslička jsou indikátory kyselé půdy."
+            "explanation": "Chickens lay eggs that we can eat or hatch."
         },
         {
-            question: "Co je eroze půdy?",
-            type: "multiple_choice",
-            options: [
-                { text: "Obohacení půdy živinami", icon: "📈", isCorrect: false },
-                { text: "Odnos půdy vodou nebo větrem", icon: "💨", isCorrect: true },
-                { text: "Růst rostlin", icon: "🌱", isCorrect: false },
-                { text: "Hnojení pole", icon: "🧪", isCorrect: false }
+            "question": "What improves soil fertility?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Plastic", "icon": "", "isCorrect": false},
+                {"text": "Ash", "icon": "", "isCorrect": false},
+                {"text": "Compost", "icon": "🌱", "isCorrect": true},
+                {"text": "Metal", "icon": "", "isCorrect": false}
             ],
-            explanation: "Eroze je ztráta úrodné vrchní vrstvy půdy působením vody, větru nebo nevhodného hospodaření."
+            "explanation": "Compost adds nutrients and improves soil structure."
         }
     ],
 
-    // Level 2 - Typy půd
-    module1_level2: [
+    // Level 2: Soil Types
+    "module1_level2": [
         {
-            question: "Která půda je nejúrodnější?",
-            type: "multiple_choice",
-            options: [
-                { text: "Černozem", icon: "⬛", isCorrect: true },
-                { text: "Podzol", icon: "🟤", isCorrect: false },
-                { text: "Solončak", icon: "🧂", isCorrect: false },
-                { text: "Rendzina", icon: "⚪", isCorrect: false }
+            "question": "What is the best soil for farming?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Sandy soil", "icon": "", "isCorrect": false},
+                {"text": "Clay soil", "icon": "", "isCorrect": false},
+                {"text": "Loamy soil", "icon": "🌱", "isCorrect": true},
+                {"text": "Rocky soil", "icon": "", "isCorrect": false}
             ],
-            explanation: "Černozem je neúrodnější typ půdy s vysokým obsahem humusu, typická pro stepi."
+            "explanation": "Loamy soil has the best mix of sand, silt, and clay."
         },
         {
-            question: "Co charakterizuje písčitou půdu?",
-            type: "multiple_choice",
-            options: [
-                { text: "Dobře propustná, rychle vysychá", icon: "🏜️", isCorrect: true },
-                { text: "Těžká, špatně propustná", icon: "🧱", isCorrect: false },
-                { text: "Velmi úrodná", icon: "🌾", isCorrect: false },
-                { text: "Tmavě zbarvená", icon: "⬛", isCorrect: false }
+            "question": "Sandy soil drains water:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Very slowly", "icon": "", "isCorrect": false},
+                {"text": "Very quickly", "icon": "💨", "isCorrect": true},
+                {"text": "Not at all", "icon": "", "isCorrect": false},
+                {"text": "Only at night", "icon": "", "isCorrect": false}
             ],
-            explanation: "Písčitá půda má velké částice, voda jí rychle protéká a snadno vysychá."
+            "explanation": "Sandy soil has large particles that let water drain fast."
         },
         {
-            question: "Jak zlepšit jílovitou půdu?",
-            type: "multiple_choice",
-            options: [
-                { text: "Přidat písek a organickou hmotu", icon: "✅", isCorrect: true },
-                { text: "Přidat více jílu", icon: "🧱", isCorrect: false },
-                { text: "Zalévat slanou vodou", icon: "🧂", isCorrect: false },
-                { text: "Nechat ladem 10 let", icon: "⏳", isCorrect: false }
+            "question": "Clay soil feels:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Gritty", "icon": "", "isCorrect": false},
+                {"text": "Smooth and sticky", "icon": "✋", "isCorrect": true},
+                {"text": "Dry and dusty", "icon": "", "isCorrect": false},
+                {"text": "Like sand", "icon": "", "isCorrect": false}
             ],
-            explanation: "Přidáním písku a kompostu zlepšíme propustnost a strukturu jílovité půdy."
+            "explanation": "Clay soil has tiny particles that feel smooth and sticky when wet."
         },
         {
-            question: "Co je hlinitá půda?",
-            type: "multiple_choice",
-            options: [
-                { text: "Směs písku, jílu a prachu", icon: "✅", isCorrect: true },
-                { text: "Čistý písek", icon: "🏖️", isCorrect: false },
-                { text: "Pouze jíl", icon: "🧱", isCorrect: false },
-                { text: "Kamenité podloží", icon: "🪨", isCorrect: false }
+            "question": "What makes soil dark?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Rocks", "icon": "", "isCorrect": false},
+                {"text": "Organic matter", "icon": "🍂", "isCorrect": true},
+                {"text": "Water", "icon": "", "isCorrect": false},
+                {"text": "Sunlight", "icon": "", "isCorrect": false}
             ],
-            explanation: "Hlinitá půda je ideální směs písku, jílu a prachu s dobrými vlastnostmi pro pěstování."
+            "explanation": "Decomposed plants and animals make soil dark and rich."
         },
         {
-            question: "Rašelinová půda obsahuje hlavně:",
-            type: "multiple_choice",
-            options: [
-                { text: "Nerozloženou organickou hmotu", icon: "🌿", isCorrect: true },
-                { text: "Písek", icon: "🏖️", isCorrect: false },
-                { text: "Vápenec", icon: "�ite", isCorrect: false },
-                { text: "Železnou rudu", icon: "⚙️", isCorrect: false }
+            "question": "Tool for pest control?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Pillow", "icon": "", "isCorrect": false},
+                {"text": "Bucket", "icon": "", "isCorrect": false},
+                {"text": "Lamp", "icon": "", "isCorrect": false},
+                {"text": "Sprayer", "icon": "💦", "isCorrect": true}
             ],
-            explanation: "Rašelina vzniká ve vlhkém prostředí z neúplně rozložených rostlin."
+            "explanation": "A sprayer applies pesticides to control pests."
         },
         {
-            question: "Jakou barvu má půda bohatá na železo?",
-            type: "multiple_choice",
-            options: [
-                { text: "Černou", icon: "⬛", isCorrect: false },
-                { text: "Červenou až oranžovou", icon: "🟠", isCorrect: true },
-                { text: "Modrou", icon: "🔵", isCorrect: false },
-                { text: "Zelenou", icon: "🟢", isCorrect: false }
+            "question": "Machine for ploughing:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Motorbike", "icon": "", "isCorrect": false},
+                {"text": "Bike", "icon": "", "isCorrect": false},
+                {"text": "Wheelbarrow", "icon": "", "isCorrect": false},
+                {"text": "Tractor", "icon": "🚜", "isCorrect": true}
             ],
-            explanation: "Oxidy železa dávají půdě charakteristickou červenou nebo oranžovou barvu."
+            "explanation": "Tractors pull ploughs to turn and prepare soil."
         },
         {
-            question: "Co je to půdní profil?",
-            type: "multiple_choice",
-            options: [
-                { text: "Svislý řez půdou ukazující vrstvy", icon: "📊", isCorrect: true },
-                { text: "Mapa pozemku", icon: "🗺️", isCorrect: false },
-                { text: "Seznam plodin", icon: "📋", isCorrect: false },
-                { text: "Rozbor vody", icon: "💧", isCorrect: false }
+            "question": "Soil pH measures:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Soil color", "icon": "", "isCorrect": false},
+                {"text": "Acid or alkaline level", "icon": "🧪", "isCorrect": true},
+                {"text": "Soil weight", "icon": "", "isCorrect": false},
+                {"text": "Soil temperature", "icon": "", "isCorrect": false}
             ],
-            explanation: "Půdní profil ukazuje jednotlivé vrstvy (horizonty) půdy od povrchu až po matečnou horninu."
+            "explanation": "pH tells us if soil is acidic, neutral, or alkaline."
         },
         {
-            question: "Který horizont označujeme písmenem A?",
-            type: "multiple_choice",
-            options: [
-                { text: "Vrchní vrstva (ornice)", icon: "🌱", isCorrect: true },
-                { text: "Matečná hornina", icon: "🪨", isCorrect: false },
-                { text: "Podzemní voda", icon: "💧", isCorrect: false },
-                { text: "Vzduch nad povrchem", icon: "💨", isCorrect: false }
+            "question": "Most plants grow best in pH:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "1-3 (very acidic)", "icon": "", "isCorrect": false},
+                {"text": "6-7 (neutral)", "icon": "✅", "isCorrect": true},
+                {"text": "10-14 (very alkaline)", "icon": "", "isCorrect": false},
+                {"text": "0 (no pH)", "icon": "", "isCorrect": false}
             ],
-            explanation: "Horizont A je vrchní vrstva půdy bohatá na organickou hmotu."
+            "explanation": "Most crops prefer slightly acidic to neutral soil (pH 6-7)."
         },
         {
-            question: "Co způsobuje zasolení půdy?",
-            type: "multiple_choice",
-            options: [
-                { text: "Nadměrné zavlažování v suchých oblastech", icon: "🏜️", isCorrect: true },
-                { text: "Příliš mnoho deště", icon: "🌧️", isCorrect: false },
-                { text: "Pěstování zeleniny", icon: "🥬", isCorrect: false },
-                { text: "Sázení stromů", icon: "🌳", isCorrect: false }
+            "question": "Earthworms in soil are:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Harmful pests", "icon": "", "isCorrect": false},
+                {"text": "Good for soil", "icon": "🪱", "isCorrect": true},
+                {"text": "Dangerous", "icon": "", "isCorrect": false},
+                {"text": "Useless", "icon": "", "isCorrect": false}
             ],
-            explanation: "V suchých oblastech se při odpařování zavlažovací vody hromadí soli v povrchové vrstvě."
+            "explanation": "Earthworms aerate soil and create natural fertilizer."
         },
         {
-            question: "Jak se nazývá půda vzniklá na vápenci?",
-            type: "multiple_choice",
-            options: [
-                { text: "Rendzina", icon: "�ite", isCorrect: true },
-                { text: "Podzol", icon: "🟤", isCorrect: false },
-                { text: "Černozem", icon: "⬛", isCorrect: false },
-                { text: "Glej", icon: "💧", isCorrect: false }
+            "question": "Topsoil is the:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Bottom layer", "icon": "", "isCorrect": false},
+                {"text": "Top layer", "icon": "⬆️", "isCorrect": true},
+                {"text": "Middle layer", "icon": "", "isCorrect": false},
+                {"text": "Rocky layer", "icon": "", "isCorrect": false}
             ],
-            explanation: "Rendzina je mělká půda vzniklá na vápencovém podloží, typická pro krasové oblasti."
+            "explanation": "Topsoil is the nutrient-rich upper layer where plants grow."
         }
     ],
 
-    // Level 3 - Výživa rostlin
-    module1_level3: [
+    // Level 3: Seeds and Planting
+    "module1_level3": [
         {
-            question: "K čemu rostliny potřebují dusík (N)?",
-            type: "multiple_choice",
-            options: [
-                { text: "K růstu listů a stonků", icon: "🌿", isCorrect: true },
-                { text: "K tvorbě květů", icon: "🌸", isCorrect: false },
-                { text: "K tvorbě kořenů", icon: "🌱", isCorrect: false },
-                { text: "K odpuzování hmyzu", icon: "🐛", isCorrect: false }
+            "question": "Best time to plant seeds?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Dry season only", "icon": "", "isCorrect": false},
+                {"text": "Start of rainy season", "icon": "🌧️", "isCorrect": true},
+                {"text": "Any time", "icon": "", "isCorrect": false},
+                {"text": "Winter only", "icon": "", "isCorrect": false}
             ],
-            explanation: "Dusík je základní stavební kámen bílkovin a chlorofylu, podporuje růst zelených částí."
+            "explanation": "Planting at the start of rains ensures water for germination."
         },
         {
-            question: "Fosfor (P) podporuje především:",
-            type: "multiple_choice",
-            options: [
-                { text: "Růst listů", icon: "🌿", isCorrect: false },
-                { text: "Tvorbu kořenů a květů", icon: "🌸", isCorrect: true },
-                { text: "Barvu plodů", icon: "🎨", isCorrect: false },
-                { text: "Chuť ovoce", icon: "🍎", isCorrect: false }
+            "question": "What is germination?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Seed dying", "icon": "", "isCorrect": false},
+                {"text": "Seed sprouting", "icon": "🌱", "isCorrect": true},
+                {"text": "Seed drying", "icon": "", "isCorrect": false},
+                {"text": "Seed sleeping", "icon": "", "isCorrect": false}
             ],
-            explanation: "Fosfor je důležitý pro energetický metabolismus, tvorbu kořenů, květů a semen."
+            "explanation": "Germination is when a seed starts to grow into a plant."
         },
         {
-            question: "Draslík (K) pomáhá rostlinám:",
-            type: "multiple_choice",
-            options: [
-                { text: "Odolávat suchu a mrazu", icon: "❄️", isCorrect: true },
-                { text: "Růst rychleji do výšky", icon: "📏", isCorrect: false },
-                { text: "Mít větší listy", icon: "🍃", isCorrect: false },
-                { text: "Vonět příjemněji", icon: "👃", isCorrect: false }
+            "question": "Seeds need what to germinate?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Only sunlight", "icon": "", "isCorrect": false},
+                {"text": "Water, warmth, air", "icon": "💧", "isCorrect": true},
+                {"text": "Only soil", "icon": "", "isCorrect": false},
+                {"text": "Only darkness", "icon": "", "isCorrect": false}
             ],
-            explanation: "Draslík reguluje vodní režim rostlin a zvyšuje odolnost vůči stresu."
+            "explanation": "Seeds need moisture, warmth, and oxygen to sprout."
         },
         {
-            question: "Žluté listy mohou signalizovat nedostatek:",
-            type: "multiple_choice",
-            options: [
-                { text: "Dusíku", icon: "🟡", isCorrect: true },
-                { text: "Vápníku", icon: "⚪", isCorrect: false },
-                { text: "Světla", icon: "☀️", isCorrect: false },
-                { text: "Oxidu uhličitého", icon: "💨", isCorrect: false }
+            "question": "Seed spacing is important because:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "It looks nice", "icon": "", "isCorrect": false},
+                {"text": "Plants need room to grow", "icon": "📏", "isCorrect": true},
+                {"text": "Farmers like counting", "icon": "", "isCorrect": false},
+                {"text": "Seeds are expensive", "icon": "", "isCorrect": false}
             ],
-            explanation: "Nedostatek dusíku způsobuje chlorózu - žloutnutí listů od spodních částí rostliny."
+            "explanation": "Proper spacing prevents competition for nutrients and light."
         },
         {
-            question: "Které hnojivo dodává hlavně dusík?",
-            type: "multiple_choice",
-            options: [
-                { text: "Ledek amonný", icon: "🧪", isCorrect: true },
-                { text: "Superfosfát", icon: "📦", isCorrect: false },
-                { text: "Draselná sůl", icon: "🧂", isCorrect: false },
-                { text: "Vápenec", icon: "⚪", isCorrect: false }
+            "question": "What is a seedbed?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "A bed for sleeping", "icon": "", "isCorrect": false},
+                {"text": "Prepared soil for seeds", "icon": "🛏️", "isCorrect": true},
+                {"text": "A type of seed", "icon": "", "isCorrect": false},
+                {"text": "A farming tool", "icon": "", "isCorrect": false}
             ],
-            explanation: "Ledek amonný (NH4NO3) je koncentrované dusíkaté hnojivo."
+            "explanation": "A seedbed is specially prepared soil for starting seeds."
         },
         {
-            question: "Co jsou mikroživiny?",
-            type: "multiple_choice",
-            options: [
-                { text: "Živiny potřebné ve stopových množstvích", icon: "🔬", isCorrect: true },
-                { text: "Malá semena", icon: "🌰", isCorrect: false },
-                { text: "Mikroorganismy", icon: "🦠", isCorrect: false },
-                { text: "Mladé rostlinky", icon: "🌱", isCorrect: false }
+            "question": "Hybrid seeds are:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Always bad", "icon": "", "isCorrect": false},
+                {"text": "Bred for better yields", "icon": "🌟", "isCorrect": true},
+                {"text": "Wild seeds", "icon": "", "isCorrect": false},
+                {"text": "Dead seeds", "icon": "", "isCorrect": false}
             ],
-            explanation: "Mikroživiny (Fe, Zn, Mn, Cu, B, Mo) jsou potřebné v malém množství, ale jsou nezbytné."
+            "explanation": "Hybrid seeds are developed to produce more or resist disease."
         },
         {
-            question: "Nedostatek železa se projevuje:",
-            type: "multiple_choice",
-            options: [
-                { text: "Žloutnutím mladých listů", icon: "🌿", isCorrect: true },
-                { text: "Hnědnutím kořenů", icon: "🟤", isCorrect: false },
-                { text: "Opadáváním květů", icon: "🌸", isCorrect: false },
-                { text: "Zvětšením plodů", icon: "🍎", isCorrect: false }
+            "question": "How deep to plant small seeds?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Very deep (30cm)", "icon": "", "isCorrect": false},
+                {"text": "Shallow (1-2cm)", "icon": "📐", "isCorrect": true},
+                {"text": "On top of soil", "icon": "", "isCorrect": false},
+                {"text": "Under rocks", "icon": "", "isCorrect": false}
             ],
-            explanation: "Chloróza způsobená nedostatkem železa postihuje nejprve nejmladší listy."
+            "explanation": "Small seeds should be planted shallowly to reach sunlight."
         },
         {
-            question: "Vápník je důležitý pro:",
-            type: "multiple_choice",
-            options: [
-                { text: "Pevnost buněčných stěn", icon: "🧱", isCorrect: true },
-                { text: "Barvu květů", icon: "🌺", isCorrect: false },
-                { text: "Rychlost růstu", icon: "⚡", isCorrect: false },
-                { text: "Vůni rostlin", icon: "👃", isCorrect: false }
+            "question": "What is transplanting?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Removing plants", "icon": "", "isCorrect": false},
+                {"text": "Moving seedlings to field", "icon": "🔄", "isCorrect": true},
+                {"text": "Cutting plants", "icon": "", "isCorrect": false},
+                {"text": "Watering plants", "icon": "", "isCorrect": false}
             ],
-            explanation: "Vápník je stavební součástí buněčných stěn a zajišťuje pevnost rostlinných pletiv."
+            "explanation": "Transplanting moves young plants from nursery to main field."
         },
         {
-            question: "Hořčík je součástí:",
-            type: "multiple_choice",
-            options: [
-                { text: "Chlorofylu", icon: "🌿", isCorrect: true },
-                { text: "Kořenů", icon: "🌱", isCorrect: false },
-                { text: "Semen", icon: "🌰", isCorrect: false },
-                { text: "Květů", icon: "🌸", isCorrect: false }
+            "question": "Store seeds in:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Wet place", "icon": "", "isCorrect": false},
+                {"text": "Cool, dry place", "icon": "🏠", "isCorrect": true},
+                {"text": "Hot sun", "icon": "", "isCorrect": false},
+                {"text": "Water", "icon": "", "isCorrect": false}
             ],
-            explanation: "Hořčík je centrálním atomem molekuly chlorofylu, bez něj by rostliny nemohly fotosyntetizovat."
+            "explanation": "Seeds stay viable longer when stored cool and dry."
         },
         {
-            question: "Co je to listová výživa?",
-            type: "multiple_choice",
-            options: [
-                { text: "Aplikace hnojiv na listy postřikem", icon: "💦", isCorrect: true },
-                { text: "Krmení listů hmyzem", icon: "🐛", isCorrect: false },
-                { text: "Ořezávání listů", icon: "✂️", isCorrect: false },
-                { text: "Sběr listů", icon: "🍂", isCorrect: false }
+            "question": "What is seed dormancy?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Seed is dead", "icon": "", "isCorrect": false},
+                {"text": "Seed is resting", "icon": "😴", "isCorrect": true},
+                {"text": "Seed is growing", "icon": "", "isCorrect": false},
+                {"text": "Seed is rotting", "icon": "", "isCorrect": false}
             ],
-            explanation: "Listová výživa umožňuje rychlé dodání živin přímo přes listy, využívá se při akutním nedostatku."
+            "explanation": "Dormant seeds are alive but waiting for right conditions."
         }
     ],
 
-    // Level 4 - Zpracování půdy
-    module1_level4: [
+    // Level 4: Water and Plants
+    "module1_level4": [
         {
-            question: "Co je orba?",
-            type: "multiple_choice",
-            options: [
-                { text: "Obracení půdy pluhem", icon: "🚜", isCorrect: true },
-                { text: "Setí semen", icon: "🌰", isCorrect: false },
-                { text: "Sklizeň obilí", icon: "🌾", isCorrect: false },
-                { text: "Zalévání pole", icon: "💧", isCorrect: false }
+            "question": "Plants take in water through:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Leaves only", "icon": "", "isCorrect": false},
+                {"text": "Roots", "icon": "🌿", "isCorrect": true},
+                {"text": "Flowers", "icon": "", "isCorrect": false},
+                {"text": "Stem only", "icon": "", "isCorrect": false}
             ],
-            explanation: "Orba je základní způsob zpracování půdy, při kterém se půda obrací a kypří."
+            "explanation": "Roots absorb water and nutrients from the soil."
         },
         {
-            question: "Kdy je nejlepší orat?",
-            type: "multiple_choice",
-            options: [
-                { text: "Na podzim po sklizni", icon: "🍂", isCorrect: true },
-                { text: "V létě za horka", icon: "☀️", isCorrect: false },
-                { text: "Když je půda zmrzlá", icon: "❄️", isCorrect: false },
-                { text: "Během silného deště", icon: "🌧️", isCorrect: false }
+            "question": "Overwatering can cause:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Faster growth", "icon": "", "isCorrect": false},
+                {"text": "Root rot", "icon": "🦠", "isCorrect": true},
+                {"text": "Stronger plants", "icon": "", "isCorrect": false},
+                {"text": "More flowers", "icon": "", "isCorrect": false}
             ],
-            explanation: "Podzimní orba umožňuje promrznutí půdy, což zlepšuje její strukturu."
+            "explanation": "Too much water drowns roots and causes disease."
         },
         {
-            question: "Co je minimalizační zpracování půdy?",
-            type: "multiple_choice",
-            options: [
-                { text: "Omezení intenzity zpracování půdy", icon: "♻️", isCorrect: true },
-                { text: "Malé pole", icon: "📏", isCorrect: false },
-                { text: "Použití malého traktoru", icon: "🚜", isCorrect: false },
-                { text: "Minimum hnojiv", icon: "🧪", isCorrect: false }
+            "question": "Best time to water plants?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Hot afternoon", "icon": "", "isCorrect": false},
+                {"text": "Early morning", "icon": "🌅", "isCorrect": true},
+                {"text": "Midnight", "icon": "", "isCorrect": false},
+                {"text": "During rain", "icon": "", "isCorrect": false}
             ],
-            explanation: "Minimalizace omezuje orbu a chrání strukturu půdy, šetří čas a pohonné hmoty."
+            "explanation": "Morning watering reduces evaporation and disease."
         },
         {
-            question: "K čemu slouží brány?",
-            type: "multiple_choice",
-            options: [
-                { text: "K drobení a urovnání půdy", icon: "✅", isCorrect: true },
-                { text: "K orání", icon: "🚜", isCorrect: false },
-                { text: "K zavlažování", icon: "💧", isCorrect: false },
-                { text: "K postřiku", icon: "💦", isCorrect: false }
+            "question": "Wilting means plants need:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Less water", "icon": "", "isCorrect": false},
+                {"text": "More water", "icon": "💧", "isCorrect": true},
+                {"text": "More sun", "icon": "", "isCorrect": false},
+                {"text": "More fertilizer", "icon": "", "isCorrect": false}
             ],
-            explanation: "Brány se používají po orbě k rozdrobení hrud a přípravě seťového lůžka."
+            "explanation": "Wilting shows plants have lost water and need irrigation."
         },
         {
-            question: "Co je to bezorebné hospodaření?",
-            type: "multiple_choice",
-            options: [
-                { text: "Pěstování bez orání půdy", icon: "🌱", isCorrect: true },
-                { text: "Pěstování bez hnojiv", icon: "🧪", isCorrect: false },
-                { text: "Pěstování bez vody", icon: "💧", isCorrect: false },
-                { text: "Pěstování bez semen", icon: "🌰", isCorrect: false }
+            "question": "Mulching helps by:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Adding pests", "icon": "", "isCorrect": false},
+                {"text": "Keeping soil moist", "icon": "🍂", "isCorrect": true},
+                {"text": "Removing nutrients", "icon": "", "isCorrect": false},
+                {"text": "Blocking roots", "icon": "", "isCorrect": false}
             ],
-            explanation: "Bezorebné (no-till) hospodaření chrání půdní strukturu a život v půdě."
+            "explanation": "Mulch covers soil to reduce water evaporation."
         },
         {
-            question: "Proč se dělá válení půdy?",
-            type: "multiple_choice",
-            options: [
-                { text: "Pro utužení a lepší kontakt semen s půdou", icon: "✅", isCorrect: true },
-                { text: "Pro zábavu", icon: "😄", isCorrect: false },
-                { text: "Pro odvodnění", icon: "💧", isCorrect: false },
-                { text: "Pro ohřev půdy", icon: "🌡️", isCorrect: false }
+            "question": "Drought-resistant crops include:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Rice", "icon": "", "isCorrect": false},
+                {"text": "Sorghum", "icon": "🌾", "isCorrect": true},
+                {"text": "Water lily", "icon": "", "isCorrect": false},
+                {"text": "Lettuce", "icon": "", "isCorrect": false}
             ],
-            explanation: "Válení zlepšuje kontakt semen s půdou a podporuje vzcházení."
+            "explanation": "Sorghum and millet survive with little water."
         },
         {
-            question: "Co je to podmítka?",
-            type: "multiple_choice",
-            options: [
-                { text: "Mělké zpracování strniště po sklizni", icon: "🌾", isCorrect: true },
-                { text: "Hluboká orba", icon: "⬇️", isCorrect: false },
-                { text: "Setí pod podmínkou", icon: "❓", isCorrect: false },
-                { text: "Typ pluhu", icon: "🔧", isCorrect: false }
+            "question": "Waterlogged soil lacks:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Water", "icon": "", "isCorrect": false},
+                {"text": "Oxygen", "icon": "💨", "isCorrect": true},
+                {"text": "Soil", "icon": "", "isCorrect": false},
+                {"text": "Color", "icon": "", "isCorrect": false}
             ],
-            explanation: "Podmítka zapraví posklizňové zbytky a podporuje klíčení plevelů, které se pak zničí."
+            "explanation": "Flooded soil has no air spaces for root breathing."
         },
         {
-            question: "Jaká je ideální hloubka orby pro obiloviny?",
-            type: "multiple_choice",
-            options: [
-                { text: "20-25 cm", icon: "📏", isCorrect: true },
-                { text: "5 cm", icon: "📐", isCorrect: false },
-                { text: "50 cm", icon: "📏", isCorrect: false },
-                { text: "1 metr", icon: "📏", isCorrect: false }
+            "question": "Rainwater harvesting means:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Praying for rain", "icon": "", "isCorrect": false},
+                {"text": "Collecting rainwater", "icon": "🌧️", "isCorrect": true},
+                {"text": "Stopping rain", "icon": "", "isCorrect": false},
+                {"text": "Measuring rain", "icon": "", "isCorrect": false}
             ],
-            explanation: "Pro běžné plodiny stačí orba do hloubky 20-25 cm."
+            "explanation": "Collecting rain in tanks saves water for dry times."
         },
         {
-            question: "Co způsobuje utužení půdy?",
-            type: "multiple_choice",
-            options: [
-                { text: "Pojezdy těžké techniky", icon: "🚜", isCorrect: true },
-                { text: "Příliš mnoho žížal", icon: "🪱", isCorrect: false },
-                { text: "Setí na jaře", icon: "🌱", isCorrect: false },
-                { text: "Pěstování trávy", icon: "🌿", isCorrect: false }
+            "question": "Drip irrigation saves:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Seeds", "icon": "", "isCorrect": false},
+                {"text": "Water", "icon": "💧", "isCorrect": true},
+                {"text": "Tools", "icon": "", "isCorrect": false},
+                {"text": "Land", "icon": "", "isCorrect": false}
             ],
-            explanation: "Těžká technika, zejména na vlhké půdě, způsobuje zhutnění půdních vrstev."
+            "explanation": "Drip systems deliver water directly to roots with less waste."
         },
         {
-            question: "Jak bojovat proti utužení půdy?",
-            type: "multiple_choice",
-            options: [
-                { text: "Hluboké kypření a střídání plodin", icon: "✅", isCorrect: true },
-                { text: "Více jezdit traktorem", icon: "🚜", isCorrect: false },
-                { text: "Přidat více jílu", icon: "🧱", isCorrect: false },
-                { text: "Zastavit pěstování", icon: "⛔", isCorrect: false }
+            "question": "Signs of water stress:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Green leaves", "icon": "", "isCorrect": false},
+                {"text": "Curling leaves", "icon": "🍂", "isCorrect": true},
+                {"text": "Fast growth", "icon": "", "isCorrect": false},
+                {"text": "More flowers", "icon": "", "isCorrect": false}
             ],
-            explanation: "Hluboké kypření poruší zhutněné vrstvy, hlubokokořenící plodiny též pomáhají."
+            "explanation": "Leaves curl and yellow when plants lack water."
         }
     ],
 
-    // Level 5 - Osevní postupy
-    module1_level5: [
+    // Level 5: Sunlight and Growth
+    "module1_level5": [
         {
-            question: "Co je osevní postup?",
-            type: "multiple_choice",
-            options: [
-                { text: "Plánované střídání plodin na poli", icon: "📅", isCorrect: true },
-                { text: "Způsob setí", icon: "🌰", isCorrect: false },
-                { text: "Rychlost klíčení", icon: "⏱️", isCorrect: false },
-                { text: "Hloubka setí", icon: "📏", isCorrect: false }
+            "question": "Plants use sunlight to make:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Water", "icon": "", "isCorrect": false},
+                {"text": "Food (sugar)", "icon": "☀️", "isCorrect": true},
+                {"text": "Soil", "icon": "", "isCorrect": false},
+                {"text": "Air", "icon": "", "isCorrect": false}
             ],
-            explanation: "Osevní postup určuje, které plodiny se budou pěstovat po sobě v průběhu let."
+            "explanation": "Photosynthesis converts sunlight into plant food."
         },
         {
-            question: "Proč se nemá pěstovat stejná plodina opakovaně?",
-            type: "multiple_choice",
-            options: [
-                { text: "Hromadí se choroby a škůdci", icon: "🦠", isCorrect: true },
-                { text: "Je to zakázáno", icon: "⛔", isCorrect: false },
-                { text: "Půda změní barvu", icon: "🎨", isCorrect: false },
-                { text: "Rostliny se nudí", icon: "😴", isCorrect: false }
+            "question": "Green color in leaves comes from:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Water", "icon": "", "isCorrect": false},
+                {"text": "Chlorophyll", "icon": "🍃", "isCorrect": true},
+                {"text": "Soil", "icon": "", "isCorrect": false},
+                {"text": "Fertilizer", "icon": "", "isCorrect": false}
             ],
-            explanation: "Monokultury vedou k šíření specifických chorob, škůdců a jednostrannému vyčerpání živin."
+            "explanation": "Chlorophyll is the green pigment that captures light."
         },
         {
-            question: "Která plodina obohacuje půdu dusíkem?",
-            type: "multiple_choice",
-            options: [
-                { text: "Hrách, fazole, jetel", icon: "🌿", isCorrect: true },
-                { text: "Pšenice", icon: "🌾", isCorrect: false },
-                { text: "Brambory", icon: "🥔", isCorrect: false },
-                { text: "Kukuřice", icon: "🌽", isCorrect: false }
+            "question": "Shade-loving plants grow well:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "In full sun", "icon": "", "isCorrect": false},
+                {"text": "Under trees", "icon": "🌳", "isCorrect": true},
+                {"text": "In desert", "icon": "", "isCorrect": false},
+                {"text": "On mountains", "icon": "", "isCorrect": false}
             ],
-            explanation: "Luskoviny (bobovité) žijí v symbiose s bakteriemi, které vážou vzdušný dusík."
+            "explanation": "Some plants prefer filtered light under tree canopy."
         },
         {
-            question: "Co je předplodina?",
-            type: "multiple_choice",
-            options: [
-                { text: "Plodina pěstovaná před hlavní plodinou", icon: "⏮️", isCorrect: true },
-                { text: "Plodina před sklizní", icon: "🌾", isCorrect: false },
-                { text: "Nezralá plodina", icon: "🌱", isCorrect: false },
-                { text: "Plevel", icon: "🌿", isCorrect: false }
+            "question": "Too much sun can cause:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Faster growth", "icon": "", "isCorrect": false},
+                {"text": "Leaf burn", "icon": "🔥", "isCorrect": true},
+                {"text": "More water", "icon": "", "isCorrect": false},
+                {"text": "Darker leaves", "icon": "", "isCorrect": false}
             ],
-            explanation: "Předplodina ovlivňuje stav půdy a podmínky pro následující hlavní plodinu."
+            "explanation": "Intense sun can scorch and damage plant leaves."
         },
         {
-            question: "Jaká je dobrá předplodina pro pšenici?",
-            type: "multiple_choice",
-            options: [
-                { text: "Řepka nebo luskoviny", icon: "✅", isCorrect: true },
-                { text: "Pšenice", icon: "🌾", isCorrect: false },
-                { text: "Ječmen", icon: "🌾", isCorrect: false },
-                { text: "Žito", icon: "🌾", isCorrect: false }
+            "question": "Plants grow towards:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Darkness", "icon": "", "isCorrect": false},
+                {"text": "Light", "icon": "☀️", "isCorrect": true},
+                {"text": "Wind", "icon": "", "isCorrect": false},
+                {"text": "Sound", "icon": "", "isCorrect": false}
             ],
-            explanation: "Po řepce a luskovinách zůstává v půdě více živin a je menší tlak chorob obilovin."
+            "explanation": "Plants bend toward light source to maximize photosynthesis."
         },
         {
-            question: "Co je meziplodina?",
-            type: "multiple_choice",
-            options: [
-                { text: "Plodina pěstovaná mezi dvěma hlavními", icon: "🌱", isCorrect: true },
-                { text: "Plodina v meziřadí", icon: "↔️", isCorrect: false },
-                { text: "Střední velikost plodiny", icon: "📏", isCorrect: false },
-                { text: "Poloviční sklizeň", icon: "🌾", isCorrect: false }
+            "question": "How many hours of sun do most crops need?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "1-2 hours", "icon": "", "isCorrect": false},
+                {"text": "6-8 hours", "icon": "⏰", "isCorrect": true},
+                {"text": "24 hours", "icon": "", "isCorrect": false},
+                {"text": "0 hours", "icon": "", "isCorrect": false}
             ],
-            explanation: "Meziplodiny (např. hořčice) se pěstují po sklizni hlavní plodiny pro zlepšení půdy."
+            "explanation": "Most vegetables need 6-8 hours of direct sunlight."
         },
         {
-            question: "Účelem zeleného hnojení je:",
-            type: "multiple_choice",
-            options: [
-                { text: "Zaorání rostlin pro obohacení půdy", icon: "🌿", isCorrect: true },
-                { text: "Barvení hnojiva na zeleno", icon: "🎨", isCorrect: false },
-                { text: "Prodej zelených plodin", icon: "💰", isCorrect: false },
-                { text: "Krmení dobytka", icon: "🐄", isCorrect: false }
+            "question": "Photosynthesis happens in:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Roots", "icon": "", "isCorrect": false},
+                {"text": "Leaves", "icon": "🍃", "isCorrect": true},
+                {"text": "Soil", "icon": "", "isCorrect": false},
+                {"text": "Water", "icon": "", "isCorrect": false}
             ],
-            explanation: "Zelené hnojení dodává půdě organickou hmotu a zlepšuje její strukturu."
+            "explanation": "Leaves contain chlorophyll where photosynthesis occurs."
         },
         {
-            question: "Typický osevní postup trvá:",
-            type: "multiple_choice",
-            options: [
-                { text: "4-6 let", icon: "📅", isCorrect: true },
-                { text: "1 rok", icon: "📆", isCorrect: false },
-                { text: "20 let", icon: "📅", isCorrect: false },
-                { text: "100 let", icon: "📅", isCorrect: false }
+            "question": "Plants release what during photosynthesis?",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Carbon dioxide", "icon": "", "isCorrect": false},
+                {"text": "Oxygen", "icon": "💨", "isCorrect": true},
+                {"text": "Nitrogen", "icon": "", "isCorrect": false},
+                {"text": "Smoke", "icon": "", "isCorrect": false}
             ],
-            explanation: "Běžný osevní postup má 4-6 let, aby se plodiny dostatečně prostřídaly."
+            "explanation": "Plants produce oxygen as a byproduct of making food."
         },
         {
-            question: "Úhor znamená:",
-            type: "multiple_choice",
-            options: [
-                { text: "Pole ponechané bez plodiny k regeneraci", icon: "🏜️", isCorrect: true },
-                { text: "Pole s uhynutými rostlinami", icon: "☠️", isCorrect: false },
-                { text: "Úhlopříčné setí", icon: "↗️", isCorrect: false },
-                { text: "Uhlí v půdě", icon: "⬛", isCorrect: false }
+            "question": "Yellow leaves often mean:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Too much light", "icon": "", "isCorrect": false},
+                {"text": "Lack of nutrients", "icon": "🟡", "isCorrect": true},
+                {"text": "Too much water", "icon": "", "isCorrect": false},
+                {"text": "Perfect health", "icon": "", "isCorrect": false}
             ],
-            explanation: "Úhor je tradiční způsob regenerace půdy, dnes se většinou nahrazuje meziplodinami."
+            "explanation": "Yellowing can indicate nitrogen or iron deficiency."
         },
         {
-            question: "Po kterých plodinách nesmí následovat cukrovka?",
-            type: "multiple_choice",
-            options: [
-                { text: "Po cukrovce a řepce (brukvovité)", icon: "⛔", isCorrect: true },
-                { text: "Po pšenici", icon: "🌾", isCorrect: false },
-                { text: "Po jeteli", icon: "🍀", isCorrect: false },
-                { text: "Po kukuřici", icon: "🌽", isCorrect: false }
+            "question": "Intercropping uses sunlight by:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Blocking all light", "icon": "", "isCorrect": false},
+                {"text": "Growing different heights together", "icon": "📊", "isCorrect": true},
+                {"text": "Using artificial light", "icon": "", "isCorrect": false},
+                {"text": "Growing at night", "icon": "", "isCorrect": false}
             ],
-            explanation: "Cukrovka a řepka jsou příbuzné a mají společné choroby jako háďátko."
+            "explanation": "Tall and short crops together use light at different levels."
         }
     ],
 
-    // Level 6 - Setí a sázení
-    module1_level6: [
+    // Level 6: Nutrients and Fertilizer
+    "module1_level6": [
         {
-            question: "Co je výsevek?",
-            type: "multiple_choice",
-            options: [
-                { text: "Množství osiva na hektar", icon: "🌰", isCorrect: true },
-                { text: "Cena osiva", icon: "💰", isCorrect: false },
-                { text: "Barva semen", icon: "🎨", isCorrect: false },
-                { text: "Věk semen", icon: "📅", isCorrect: false }
+            "question": "Plants need nitrogen (N) for:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Root growth", "icon": "", "isCorrect": false},
+                {"text": "Leaf growth", "icon": "🍃", "isCorrect": true},
+                {"text": "Flower color", "icon": "", "isCorrect": false},
+                {"text": "Seed size", "icon": "", "isCorrect": false}
             ],
-            explanation: "Výsevek udává, kolik kilogramů nebo kusů osiva se vysévá na jeden hektar."
+            "explanation": "Nitrogen promotes green, leafy growth."
         },
         {
-            question: "Co je klíčivost osiva?",
-            type: "multiple_choice",
-            options: [
-                { text: "Procento semen schopných vyklíčit", icon: "🌱", isCorrect: true },
-                { text: "Rychlost růstu", icon: "⚡", isCorrect: false },
-                { text: "Velikost semen", icon: "📏", isCorrect: false },
-                { text: "Barva klíčků", icon: "🎨", isCorrect: false }
+            "question": "Phosphorus (P) helps with:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Leaf color", "icon": "", "isCorrect": false},
+                {"text": "Root development", "icon": "🌱", "isCorrect": true},
+                {"text": "Stem height", "icon": "", "isCorrect": false},
+                {"text": "Weed control", "icon": "", "isCorrect": false}
             ],
-            explanation: "Klíčivost vyjadřuje kvalitu osiva - jaké procento semen skutečně vzklíčí."
+            "explanation": "Phosphorus is essential for strong root systems."
         },
         {
-            question: "Jaká je optimální hloubka setí pšenice?",
-            type: "multiple_choice",
-            options: [
-                { text: "3-5 cm", icon: "📏", isCorrect: true },
-                { text: "0,5 cm", icon: "📐", isCorrect: false },
-                { text: "15 cm", icon: "📏", isCorrect: false },
-                { text: "30 cm", icon: "📏", isCorrect: false }
+            "question": "Potassium (K) improves:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Leaf size", "icon": "", "isCorrect": false},
+                {"text": "Disease resistance", "icon": "🛡️", "isCorrect": true},
+                {"text": "Weed growth", "icon": "", "isCorrect": false},
+                {"text": "Soil color", "icon": "", "isCorrect": false}
             ],
-            explanation: "Pšenice se seje do hloubky 3-5 cm pro optimální vzcházení."
+            "explanation": "Potassium strengthens plants against disease and stress."
         },
         {
-            question: "Co je to moření osiva?",
-            type: "multiple_choice",
-            options: [
-                { text: "Ošetření semen proti chorobám", icon: "💊", isCorrect: true },
-                { text: "Barvení semen", icon: "🎨", isCorrect: false },
-                { text: "Sušení semen", icon: "☀️", isCorrect: false },
-                { text: "Máčení v moři", icon: "🌊", isCorrect: false }
+            "question": "NPK on fertilizer bags means:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Brand name", "icon": "", "isCorrect": false},
+                {"text": "Nitrogen, Phosphorus, Potassium", "icon": "🧪", "isCorrect": true},
+                {"text": "Weight of bag", "icon": "", "isCorrect": false},
+                {"text": "Expiry date", "icon": "", "isCorrect": false}
             ],
-            explanation: "Moření chrání osivo před houbovými chorobami a škůdci v počátečních fázích."
+            "explanation": "NPK shows the percentage of three main nutrients."
         },
         {
-            question: "Řádkový výsev znamená:",
-            type: "multiple_choice",
-            options: [
-                { text: "Setí do řádků s určitým rozestupem", icon: "📐", isCorrect: true },
-                { text: "Setí v řadě za sebou", icon: "👥", isCorrect: false },
-                { text: "Řádné setí", icon: "✅", isCorrect: false },
-                { text: "Výsev řídkého osiva", icon: "🌾", isCorrect: false }
+            "question": "Organic fertilizer comes from:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Factories only", "icon": "", "isCorrect": false},
+                {"text": "Living things", "icon": "🐄", "isCorrect": true},
+                {"text": "Rocks", "icon": "", "isCorrect": false},
+                {"text": "Plastic", "icon": "", "isCorrect": false}
             ],
-            explanation: "Řádkový výsev umožňuje mechanickou kultivaci meziřadí a lepší využití prostoru."
+            "explanation": "Organic fertilizers are made from animal or plant matter."
         },
         {
-            question: "Kdy se seje jarní ječmen?",
-            type: "multiple_choice",
-            options: [
-                { text: "Na jaře (březen-duben)", icon: "🌸", isCorrect: true },
-                { text: "V létě", icon: "☀️", isCorrect: false },
-                { text: "Na podzim", icon: "🍂", isCorrect: false },
-                { text: "V zimě", icon: "❄️", isCorrect: false }
+            "question": "Too much fertilizer can:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Always help plants", "icon": "", "isCorrect": false},
+                {"text": "Burn plants", "icon": "🔥", "isCorrect": true},
+                {"text": "Make plants blue", "icon": "", "isCorrect": false},
+                {"text": "Kill all weeds", "icon": "", "isCorrect": false}
             ],
-            explanation: "Jarní obiloviny se sejí na jaře, jakmile to podmínky dovolí."
+            "explanation": "Excess fertilizer damages roots and can kill plants."
         },
         {
-            question: "Jaká je výhoda certifikovaného osiva?",
-            type: "multiple_choice",
-            options: [
-                { text: "Zaručená čistota a klíčivost", icon: "✅", isCorrect: true },
-                { text: "Nižší cena", icon: "💰", isCorrect: false },
-                { text: "Větší semena", icon: "📏", isCorrect: false },
-                { text: "Barevný obal", icon: "🎨", isCorrect: false }
+            "question": "Green manure is:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Green-colored fertilizer", "icon": "", "isCorrect": false},
+                {"text": "Plants plowed into soil", "icon": "🌿", "isCorrect": true},
+                {"text": "Moldy food", "icon": "", "isCorrect": false},
+                {"text": "Green paint", "icon": "", "isCorrect": false}
             ],
-            explanation: "Certifikované osivo má garantované vlastnosti a je bez příměsí a chorob."
+            "explanation": "Growing and plowing in plants adds organic matter to soil."
         },
         {
-            question: "Co je přesný výsev?",
-            type: "multiple_choice",
-            options: [
-                { text: "Setí jednotlivých semen na přesné vzdálenosti", icon: "🎯", isCorrect: true },
-                { text: "Velmi přesné vážení osiva", icon: "⚖️", isCorrect: false },
-                { text: "Setí přesně v poledne", icon: "🕛", isCorrect: false },
-                { text: "Setí pouze kvalitního osiva", icon: "✅", isCorrect: false }
+            "question": "Legumes help soil by adding:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Salt", "icon": "", "isCorrect": false},
+                {"text": "Nitrogen", "icon": "🫘", "isCorrect": true},
+                {"text": "Rocks", "icon": "", "isCorrect": false},
+                {"text": "Water", "icon": "", "isCorrect": false}
             ],
-            explanation: "Přesný výsev (např. u kukuřice, cukrovky) ukládá semena jednotlivě v přesných rozestupech."
+            "explanation": "Beans and peas fix nitrogen from air into soil."
         },
         {
-            question: "Proč se brambory sází hluboko?",
-            type: "multiple_choice",
-            options: [
-                { text: "Aby měly hlízy prostor růst", icon: "🥔", isCorrect: true },
-                { text: "Aby se zahřály", icon: "🌡️", isCorrect: false },
-                { text: "Kvůli škůdcům", icon: "🐛", isCorrect: false },
-                { text: "Protože jsou těžké", icon: "⚖️", isCorrect: false }
+            "question": "Best time to apply fertilizer:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "After harvest", "icon": "", "isCorrect": false},
+                {"text": "Before or during planting", "icon": "🌱", "isCorrect": true},
+                {"text": "In winter", "icon": "", "isCorrect": false},
+                {"text": "Never", "icon": "", "isCorrect": false}
             ],
-            explanation: "Hlubší sázení a následné hrůbkování vytváří prostor pro tvorbu hlíz."
+            "explanation": "Plants need nutrients most when actively growing."
         },
         {
-            question: "Co je předklíčení brambor?",
-            type: "multiple_choice",
-            options: [
-                { text: "Naklíčení hlíz před výsadbou", icon: "🌱", isCorrect: true },
-                { text: "Předběžná sklizeň", icon: "🌾", isCorrect: false },
-                { text: "Třídění brambor", icon: "📊", isCorrect: false },
-                { text: "Mytí brambor", icon: "💧", isCorrect: false }
+            "question": "Foliar feeding means:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Feeding roots", "icon": "", "isCorrect": false},
+                {"text": "Spraying nutrients on leaves", "icon": "🍃", "isCorrect": true},
+                {"text": "Feeding animals", "icon": "", "isCorrect": false},
+                {"text": "Adding water", "icon": "", "isCorrect": false}
             ],
-            explanation: "Předklíčené brambory rychleji vzcházejí a lépe využijí vegetační období."
+            "explanation": "Leaves can absorb liquid nutrients directly."
         }
     ],
 
-    // Level 7 - Plevele
-    module1_level7: [
+    // Level 7: Weeds and Control
+    "module1_level7": [
         {
-            question: "Co je plevel?",
-            type: "multiple_choice",
-            options: [
-                { text: "Rostlina rostoucí na nežádoucím místě", icon: "🌿", isCorrect: true },
-                { text: "Jedovatá rostlina", icon: "☠️", isCorrect: false },
-                { text: "Rostlina s ostrými listy", icon: "🌵", isCorrect: false },
-                { text: "Pouze bodláky", icon: "🌸", isCorrect: false }
+            "question": "Weeds compete with crops for:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Air only", "icon": "", "isCorrect": false},
+                {"text": "Water, light, nutrients", "icon": "⚔️", "isCorrect": true},
+                {"text": "Nothing", "icon": "", "isCorrect": false},
+                {"text": "Farmers' attention", "icon": "", "isCorrect": false}
             ],
-            explanation: "Plevel je jakákoliv rostlina, která roste tam, kde ji nechceme - konkuruje plodinám."
+            "explanation": "Weeds steal resources that crops need to grow."
         },
         {
-            question: "Jak se plevele šíří?",
-            type: "multiple_choice",
-            options: [
-                { text: "Semeny, oddenky, větrem, vodou", icon: "💨", isCorrect: true },
-                { text: "Pouze semeny", icon: "🌰", isCorrect: false },
-                { text: "Pouze větrem", icon: "🌬️", isCorrect: false },
-                { text: "Lidskou činností", icon: "👷", isCorrect: false }
+            "question": "Hand weeding is best for:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Large farms only", "icon": "", "isCorrect": false},
+                {"text": "Small areas", "icon": "✋", "isCorrect": true},
+                {"text": "Desert farming", "icon": "", "isCorrect": false},
+                {"text": "Underwater farms", "icon": "", "isCorrect": false}
             ],
-            explanation: "Plevele mají různé strategie šíření - semena, podzemní oddenky, vítr, vodu i zvířata."
+            "explanation": "Hand weeding works well for gardens and small plots."
         },
         {
-            question: "Příklad vytrvalého plevele je:",
-            type: "multiple_choice",
-            options: [
-                { text: "Pýr plazivý", icon: "🌿", isCorrect: true },
-                { text: "Mák vlčí", icon: "🌺", isCorrect: false },
-                { text: "Heřmánek", icon: "🌼", isCorrect: false },
-                { text: "Koukol", icon: "💜", isCorrect: false }
+            "question": "Mulching prevents weeds by:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Poisoning them", "icon": "", "isCorrect": false},
+                {"text": "Blocking sunlight", "icon": "🌑", "isCorrect": true},
+                {"text": "Freezing them", "icon": "", "isCorrect": false},
+                {"text": "Feeding them", "icon": "", "isCorrect": false}
             ],
-            explanation: "Pýr je velmi obtížný vytrvalý plevel šířící se podzemními oddenky."
+            "explanation": "Mulch covers soil so weed seeds can't get light to grow."
         },
         {
-            question: "Co je herbicid?",
-            type: "multiple_choice",
-            options: [
-                { text: "Přípravek na hubení plevelů", icon: "🧪", isCorrect: true },
-                { text: "Přípravek na hubení hmyzu", icon: "🐛", isCorrect: false },
-                { text: "Hnojivo", icon: "🌱", isCorrect: false },
-                { text: "Přípravek na choroby", icon: "💊", isCorrect: false }
+            "question": "Herbicide is used to kill:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Insects", "icon": "", "isCorrect": false},
+                {"text": "Weeds", "icon": "🧴", "isCorrect": true},
+                {"text": "Animals", "icon": "", "isCorrect": false},
+                {"text": "Crops", "icon": "", "isCorrect": false}
             ],
-            explanation: "Herbicidy jsou chemické přípravky určené k likvidaci nežádoucích rostlin."
+            "explanation": "Herbicides are chemicals that kill unwanted plants."
         },
         {
-            question: "Co je selektivní herbicid?",
-            type: "multiple_choice",
-            options: [
-                { text: "Hubí jen určité druhy rostlin", icon: "🎯", isCorrect: true },
-                { text: "Hubí všechny rostliny", icon: "☠️", isCorrect: false },
-                { text: "Vybírá si sám", icon: "🤖", isCorrect: false },
-                { text: "Je dražší", icon: "💰", isCorrect: false }
+            "question": "Best time to weed is when:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Weeds are large", "icon": "", "isCorrect": false},
+                {"text": "Weeds are small", "icon": "🌱", "isCorrect": true},
+                {"text": "Crops are dying", "icon": "", "isCorrect": false},
+                {"text": "After harvest", "icon": "", "isCorrect": false}
             ],
-            explanation: "Selektivní herbicidy hubí plevele, ale nepoškozují kulturní plodinu."
+            "explanation": "Young weeds are easier to remove and cause less damage."
         },
         {
-            question: "Mechanická ochrana proti plevelům zahrnuje:",
-            type: "multiple_choice",
-            options: [
-                { text: "Plečkování, okopávání, mulčování", icon: "🔧", isCorrect: true },
-                { text: "Pouze postřik", icon: "💦", isCorrect: false },
-                { text: "Pouze ruční trhání", icon: "✋", isCorrect: false },
-                { text: "Nic nedělat", icon: "😴", isCorrect: false }
+            "question": "Crop rotation helps control weeds by:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Killing all plants", "icon": "", "isCorrect": false},
+                {"text": "Breaking weed cycles", "icon": "🔄", "isCorrect": true},
+                {"text": "Adding more weeds", "icon": "", "isCorrect": false},
+                {"text": "Using chemicals", "icon": "", "isCorrect": false}
             ],
-            explanation: "Mechanické metody fyzicky odstraňují nebo potlačují plevele bez chemie."
+            "explanation": "Different crops disrupt weed growth patterns."
         },
         {
-            question: "Co je to mulč?",
-            type: "multiple_choice",
-            options: [
-                { text: "Pokryvná vrstva na půdě", icon: "🍂", isCorrect: true },
-                { text: "Druh hnojiva", icon: "🧪", isCorrect: false },
-                { text: "Plevel", icon: "🌿", isCorrect: false },
-                { text: "Zavlažovací systém", icon: "💧", isCorrect: false }
+            "question": "A hoe is used for:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Watering", "icon": "", "isCorrect": false},
+                {"text": "Weeding and tilling", "icon": "🔧", "isCorrect": true},
+                {"text": "Harvesting fruit", "icon": "", "isCorrect": false},
+                {"text": "Planting seeds", "icon": "", "isCorrect": false}
             ],
-            explanation: "Mulč (sláma, kůra, folie) brání růstu plevelů a udržuje vlhkost půdy."
+            "explanation": "A hoe cuts weeds and loosens topsoil."
         },
         {
-            question: "Pcháč je:",
-            type: "multiple_choice",
-            options: [
-                { text: "Obtížný vytrvalý plevel", icon: "🌿", isCorrect: true },
-                { text: "Kulturní plodina", icon: "🌾", isCorrect: false },
-                { text: "Okrasná květina", icon: "🌸", isCorrect: false },
-                { text: "Léčivá bylina", icon: "💊", isCorrect: false }
+            "question": "Cover crops help by:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Attracting weeds", "icon": "", "isCorrect": false},
+                {"text": "Smothering weeds", "icon": "🌿", "isCorrect": true},
+                {"text": "Growing weeds", "icon": "", "isCorrect": false},
+                {"text": "Eating weeds", "icon": "", "isCorrect": false}
             ],
-            explanation: "Pcháč oset je jeden z nejhorších vytrvalých plevelů s hlubokými kořeny."
+            "explanation": "Dense cover crops outcompete and shade out weeds."
         },
         {
-            question: "Proč je důležité hubit plevele před kvetením?",
-            type: "multiple_choice",
-            options: [
-                { text: "Aby se nezasemenily", icon: "🌰", isCorrect: true },
-                { text: "Květy jsou jedovaté", icon: "☠️", isCorrect: false },
-                { text: "Jsou pak krásnější", icon: "🌸", isCorrect: false },
-                { text: "Je to jednodušší", icon: "✅", isCorrect: false }
+            "question": "Perennial weeds are hard to control because:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "They are small", "icon": "", "isCorrect": false},
+                {"text": "They regrow from roots", "icon": "🌱", "isCorrect": true},
+                {"text": "They only grow once", "icon": "", "isCorrect": false},
+                {"text": "They are useful", "icon": "", "isCorrect": false}
             ],
-            explanation: "Jeden plevel může vyprodukovat tisíce semen, která vydrží v půdě roky."
+            "explanation": "Perennial weeds survive and regrow from underground parts."
         },
         {
-            question: "Integrovaná ochrana proti plevelům znamená:",
-            type: "multiple_choice",
-            options: [
-                { text: "Kombinace více metod ochrany", icon: "🔄", isCorrect: true },
-                { text: "Pouze chemická ochrana", icon: "🧪", isCorrect: false },
-                { text: "Integrace plevelů do osevního postupu", icon: "📅", isCorrect: false },
-                { text: "Ignorování plevelů", icon: "🙈", isCorrect: false }
+            "question": "Some weeds can be used as:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Building material", "icon": "", "isCorrect": false},
+                {"text": "Medicine or food", "icon": "🌿", "isCorrect": true},
+                {"text": "Fuel for cars", "icon": "", "isCorrect": false},
+                {"text": "Nothing at all", "icon": "", "isCorrect": false}
             ],
-            explanation: "Integrovaná ochrana kombinuje prevenci, mechanické a chemické metody."
+            "explanation": "Many weeds have medicinal or nutritional value."
         }
     ],
 
-    // Level 8 - Voda v půdě
-    module1_level8: [
+    // Level 8: Crop Planning
+    "module1_level8": [
         {
-            question: "Co je polní vodní kapacita?",
-            type: "multiple_choice",
-            options: [
-                { text: "Maximum vody, které půda udrží", icon: "💧", isCorrect: true },
-                { text: "Množství vody na poli", icon: "🏞️", isCorrect: false },
-                { text: "Kapacita zavlažování", icon: "🚿", isCorrect: false },
-                { text: "Objem nádrže", icon: "🛢️", isCorrect: false }
+            "question": "Crop rotation means:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Spinning crops", "icon": "", "isCorrect": false},
+                {"text": "Growing different crops each season", "icon": "🔄", "isCorrect": true},
+                {"text": "Harvesting at night", "icon": "", "isCorrect": false},
+                {"text": "Planting upside down", "icon": "", "isCorrect": false}
             ],
-            explanation: "Polní vodní kapacita je množství vody, které půda udrží proti gravitaci."
+            "explanation": "Rotating crops prevents soil depletion and disease buildup."
         },
         {
-            question: "Co je bod vadnutí?",
-            type: "multiple_choice",
-            options: [
-                { text: "Vlhkost, při které rostliny vadnou", icon: "🥀", isCorrect: true },
-                { text: "Místo kde rostliny vadnou", icon: "📍", isCorrect: false },
-                { text: "Čas vadnutí", icon: "⏰", isCorrect: false },
-                { text: "Teplota vadnutí", icon: "🌡️", isCorrect: false }
+            "question": "Monoculture is growing:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Many different crops", "icon": "", "isCorrect": false},
+                {"text": "One crop only", "icon": "🌽", "isCorrect": true},
+                {"text": "No crops", "icon": "", "isCorrect": false},
+                {"text": "Wild plants", "icon": "", "isCorrect": false}
             ],
-            explanation: "Při bodu vadnutí je voda v půdě tak pevně vázána, že ji kořeny nedokáží čerpat."
+            "explanation": "Monoculture means growing only one type of crop."
         },
         {
-            question: "Která půda má největší vodní kapacitu?",
-            type: "multiple_choice",
-            options: [
-                { text: "Jílovitá", icon: "🧱", isCorrect: true },
-                { text: "Písčitá", icon: "🏖️", isCorrect: false },
-                { text: "Štěrkovitá", icon: "⚪", isCorrect: false },
-                { text: "Kamenitá", icon: "🪨", isCorrect: false }
+            "question": "Intercropping benefits include:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Using more chemicals", "icon": "", "isCorrect": false},
+                {"text": "Better use of space", "icon": "📊", "isCorrect": true},
+                {"text": "More weeds", "icon": "", "isCorrect": false},
+                {"text": "Slower growth", "icon": "", "isCorrect": false}
             ],
-            explanation: "Jílovitá půda má nejmenší póry a váže nejvíce vody, ale ne vždy je dostupná rostlinám."
+            "explanation": "Growing crops together maximizes land use and diversity."
         },
         {
-            question: "Co způsobuje zamokření půdy?",
-            type: "multiple_choice",
-            options: [
-                { text: "Vysoká hladina spodní vody", icon: "💧", isCorrect: true },
-                { text: "Příliš mnoho slunce", icon: "☀️", isCorrect: false },
-                { text: "Silný vítr", icon: "💨", isCorrect: false },
-                { text: "Nedostatek hnojiv", icon: "🧪", isCorrect: false }
+            "question": "A cash crop is grown for:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Animal feed only", "icon": "", "isCorrect": false},
+                {"text": "Selling for money", "icon": "💰", "isCorrect": true},
+                {"text": "Decoration", "icon": "", "isCorrect": false},
+                {"text": "Burning", "icon": "", "isCorrect": false}
             ],
-            explanation: "Zamokření vzniká při vysoké hladině spodní vody nebo špatném odvodnění."
+            "explanation": "Cash crops are sold for income rather than personal use."
         },
         {
-            question: "K čemu slouží drenáž?",
-            type: "multiple_choice",
-            options: [
-                { text: "K odvodnění přebytečné vody", icon: "🔽", isCorrect: true },
-                { text: "K zavlažování", icon: "💦", isCorrect: false },
-                { text: "K hnojení", icon: "🧪", isCorrect: false },
-                { text: "K setí", icon: "🌰", isCorrect: false }
+            "question": "Food crops are grown for:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Export only", "icon": "", "isCorrect": false},
+                {"text": "Family consumption", "icon": "🍽️", "isCorrect": true},
+                {"text": "Factories", "icon": "", "isCorrect": false},
+                {"text": "Burning", "icon": "", "isCorrect": false}
             ],
-            explanation: "Drenážní systém odvádí přebytečnou vodu z půdy a zlepšuje provzdušnění."
+            "explanation": "Food crops feed the farmer's family first."
         },
         {
-            question: "Co je evapotranspirace?",
-            type: "multiple_choice",
-            options: [
-                { text: "Výpar z půdy a rostlin", icon: "☁️", isCorrect: true },
-                { text: "Druh dopravy", icon: "🚚", isCorrect: false },
-                { text: "Typ hnojiva", icon: "🧪", isCorrect: false },
-                { text: "Nemoc rostlin", icon: "🦠", isCorrect: false }
+            "question": "Fallow land is:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Always planted", "icon": "", "isCorrect": false},
+                {"text": "Resting without crops", "icon": "😴", "isCorrect": true},
+                {"text": "Covered in water", "icon": "", "isCorrect": false},
+                {"text": "Full of buildings", "icon": "", "isCorrect": false}
             ],
-            explanation: "Evapotranspirace je součet výparu z půdy (evaporace) a z rostlin (transpirace)."
+            "explanation": "Fallow periods let soil recover nutrients naturally."
         },
         {
-            question: "Jak snížit výpar z půdy?",
-            type: "multiple_choice",
-            options: [
-                { text: "Mulčováním", icon: "🍂", isCorrect: true },
-                { text: "Častým kypřením", icon: "🔧", isCorrect: false },
-                { text: "Přidáním soli", icon: "🧂", isCorrect: false },
-                { text: "Odstraněním rostlin", icon: "✂️", isCorrect: false }
+            "question": "Growing season depends on:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Farmer's mood", "icon": "", "isCorrect": false},
+                {"text": "Climate and weather", "icon": "🌤️", "isCorrect": true},
+                {"text": "Crop color", "icon": "", "isCorrect": false},
+                {"text": "Market prices", "icon": "", "isCorrect": false}
             ],
-            explanation: "Mulč vytváří bariéru, která omezuje přímý výpar vody z povrchu půdy."
+            "explanation": "Temperature and rainfall determine when crops can grow."
         },
         {
-            question: "Co je kapilární vzlínavost?",
-            type: "multiple_choice",
-            options: [
-                { text: "Vzestup vody v úzkých pórech", icon: "⬆️", isCorrect: true },
-                { text: "Pokles vody", icon: "⬇️", isCorrect: false },
-                { text: "Odpařování vody", icon: "💨", isCorrect: false },
-                { text: "Zamrzání vody", icon: "❄️", isCorrect: false }
+            "question": "Succession planting means:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Planting once only", "icon": "", "isCorrect": false},
+                {"text": "Planting in stages", "icon": "📅", "isCorrect": true},
+                {"text": "Never planting", "icon": "", "isCorrect": false},
+                {"text": "Planting underwater", "icon": "", "isCorrect": false}
             ],
-            explanation: "Kapilární síly umožňují vzestup vody v úzkých půdních pórech proti gravitaci."
+            "explanation": "Staggered planting ensures continuous harvest."
         },
         {
-            question: "Půdní sucho lze rozpoznat podle:",
-            type: "multiple_choice",
-            options: [
-                { text: "Prasklin v půdě a vadnutí rostlin", icon: "🥀", isCorrect: true },
-                { text: "Zelených listů", icon: "🌿", isCorrect: false },
-                { text: "Rychlého růstu", icon: "📈", isCorrect: false },
-                { text: "Hodně žížal", icon: "🪱", isCorrect: false }
+            "question": "Companion planting uses:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Random plant combinations", "icon": "", "isCorrect": false},
+                {"text": "Plants that help each other", "icon": "🤝", "isCorrect": true},
+                {"text": "Only one plant type", "icon": "", "isCorrect": false},
+                {"text": "Artificial plants", "icon": "", "isCorrect": false}
             ],
-            explanation: "Sucho se projevuje prasklinami, tvrdou půdou a vadnoucími rostlinami."
+            "explanation": "Some plants grown together protect or benefit each other."
         },
         {
-            question: "Co je infiltrace?",
-            type: "multiple_choice",
-            options: [
-                { text: "Vsakování vody do půdy", icon: "⬇️", isCorrect: true },
-                { text: "Vypařování vody", icon: "☁️", isCorrect: false },
-                { text: "Zamrzání vody", icon: "❄️", isCorrect: false },
-                { text: "Znečištění vody", icon: "🏭", isCorrect: false }
+            "question": "A farm calendar helps with:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Decorating the farm", "icon": "", "isCorrect": false},
+                {"text": "Planning activities", "icon": "📆", "isCorrect": true},
+                {"text": "Counting animals", "icon": "", "isCorrect": false},
+                {"text": "Selling products", "icon": "", "isCorrect": false}
             ],
-            explanation: "Infiltrace je proces, kdy voda proniká z povrchu do půdy."
+            "explanation": "A calendar schedules planting, care, and harvest times."
         }
     ],
 
-    // Level 9 - Půdní život
-    module1_level9: [
+    // Level 9: Soil Conservation
+    "module1_level9": [
         {
-            question: "Co je půdní mikrobiom?",
-            type: "multiple_choice",
-            options: [
-                { text: "Společenstvo mikroorganismů v půdě", icon: "🦠", isCorrect: true },
-                { text: "Malé kamínky", icon: "🪨", isCorrect: false },
-                { text: "Kořeny rostlin", icon: "🌱", isCorrect: false },
-                { text: "Podzemní voda", icon: "💧", isCorrect: false }
+            "question": "Soil erosion is caused by:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Too many crops", "icon": "", "isCorrect": false},
+                {"text": "Wind and water", "icon": "💨", "isCorrect": true},
+                {"text": "Darkness", "icon": "", "isCorrect": false},
+                {"text": "Cold weather", "icon": "", "isCorrect": false}
             ],
-            explanation: "Půdní mikrobiom zahrnuje bakterie, houby, prvky a další mikroorganismy."
+            "explanation": "Wind and water carry away topsoil if unprotected."
         },
         {
-            question: "Co je mykorhiza?",
-            type: "multiple_choice",
-            options: [
-                { text: "Symbióza hub s kořeny rostlin", icon: "🍄", isCorrect: true },
-                { text: "Druh hnojiva", icon: "🧪", isCorrect: false },
-                { text: "Nemoc hub", icon: "🦠", isCorrect: false },
-                { text: "Typ půdy", icon: "🌍", isCorrect: false }
+            "question": "Contour plowing follows:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Straight lines", "icon": "", "isCorrect": false},
+                {"text": "Hill curves", "icon": "🏔️", "isCorrect": true},
+                {"text": "Rivers", "icon": "", "isCorrect": false},
+                {"text": "Roads", "icon": "", "isCorrect": false}
             ],
-            explanation: "Mykorhizní houby pomáhají rostlinám získávat vodu a živiny výměnou za cukry."
+            "explanation": "Plowing along contours slows water runoff on slopes."
         },
         {
-            question: "Hlízkové bakterie na luskovinách:",
-            type: "multiple_choice",
-            options: [
-                { text: "Vážou vzdušný dusík", icon: "🌿", isCorrect: true },
-                { text: "Způsobují choroby", icon: "🦠", isCorrect: false },
-                { text: "Produkují kyslík", icon: "💨", isCorrect: false },
-                { text: "Ničí kořeny", icon: "❌", isCorrect: false }
+            "question": "Terracing is used on:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Flat land", "icon": "", "isCorrect": false},
+                {"text": "Hillsides", "icon": "🏔️", "isCorrect": true},
+                {"text": "Underwater", "icon": "", "isCorrect": false},
+                {"text": "Rooftops", "icon": "", "isCorrect": false}
             ],
-            explanation: "Rhizobium bakterie v hlízkách luskovin fixují atmosférický dusík do dostupné formy."
+            "explanation": "Terraces create flat steps on slopes to hold soil."
         },
         {
-            question: "Kolik živých organismů je v hrsti zdravé půdy?",
-            type: "multiple_choice",
-            options: [
-                { text: "Miliardy", icon: "🔬", isCorrect: true },
-                { text: "Stovky", icon: "💯", isCorrect: false },
-                { text: "Desítky", icon: "🔟", isCorrect: false },
-                { text: "Žádné", icon: "0️⃣", isCorrect: false }
+            "question": "Trees prevent erosion by:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Blocking sun", "icon": "", "isCorrect": false},
+                {"text": "Holding soil with roots", "icon": "🌳", "isCorrect": true},
+                {"text": "Adding water", "icon": "", "isCorrect": false},
+                {"text": "Making shade", "icon": "", "isCorrect": false}
             ],
-            explanation: "V jednom gramu zdravé půdy mohou být miliardy bakterií a miliony hub."
+            "explanation": "Tree roots bind soil particles and prevent washing away."
         },
         {
-            question: "Co dělají rozkladači v půdě?",
-            type: "multiple_choice",
-            options: [
-                { text: "Rozkládají organickou hmotu", icon: "♻️", isCorrect: true },
-                { text: "Staví nory", icon: "🕳️", isCorrect: false },
-                { text: "Jedí rostliny", icon: "🌿", isCorrect: false },
-                { text: "Produkují kyslík", icon: "💨", isCorrect: false }
+            "question": "Windbreaks are rows of:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Rocks", "icon": "", "isCorrect": false},
+                {"text": "Trees or shrubs", "icon": "🌲", "isCorrect": true},
+                {"text": "Fences", "icon": "", "isCorrect": false},
+                {"text": "Water", "icon": "", "isCorrect": false}
             ],
-            explanation: "Rozkladači (bakterie, houby, žížaly) přeměňují mrtvou organickou hmotu na humus."
+            "explanation": "Lines of trees slow wind and protect crops and soil."
         },
         {
-            question: "Půdní fauna zahrnuje:",
-            type: "multiple_choice",
-            options: [
-                { text: "Žížaly, stonožky, roztoče, hmyz", icon: "🪱", isCorrect: true },
-                { text: "Pouze žížaly", icon: "🐛", isCorrect: false },
-                { text: "Pouze bakterie", icon: "🦠", isCorrect: false },
-                { text: "Pouze houby", icon: "🍄", isCorrect: false }
+            "question": "Overgrazing causes:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Better grass", "icon": "", "isCorrect": false},
+                {"text": "Bare soil and erosion", "icon": "🐄", "isCorrect": true},
+                {"text": "More trees", "icon": "", "isCorrect": false},
+                {"text": "Healthier animals", "icon": "", "isCorrect": false}
             ],
-            explanation: "Půdní fauna je rozmanitá - od mikroskopických roztočů po žížaly a hmyz."
+            "explanation": "Too many animals destroy grass cover and expose soil."
         },
         {
-            question: "Proč je důležitá půdní biodiverzita?",
-            type: "multiple_choice",
-            options: [
-                { text: "Zajišťuje koloběh živin a zdraví půdy", icon: "🔄", isCorrect: true },
-                { text: "Je to jen zajímavost", icon: "🤔", isCorrect: false },
-                { text: "Nemá význam", icon: "❌", isCorrect: false },
-                { text: "Škodí rostlinám", icon: "☠️", isCorrect: false }
+            "question": "Grass strips help by:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Looking pretty", "icon": "", "isCorrect": false},
+                {"text": "Slowing water flow", "icon": "🌿", "isCorrect": true},
+                {"text": "Attracting pests", "icon": "", "isCorrect": false},
+                {"text": "Increasing weeds", "icon": "", "isCorrect": false}
             ],
-            explanation: "Rozmanitost půdního života zajišťuje stabilitu ekosystému a odolnost vůči stresu."
+            "explanation": "Grass strips filter runoff and trap sediment."
         },
         {
-            question: "Co škodí půdnímu životu?",
-            type: "multiple_choice",
-            options: [
-                { text: "Nadměrná chemie a utužení", icon: "⚠️", isCorrect: true },
-                { text: "Organické hnojení", icon: "🌿", isCorrect: false },
-                { text: "Střídání plodin", icon: "🔄", isCorrect: false },
-                { text: "Kompostování", icon: "♻️", isCorrect: false }
+            "question": "No-till farming protects:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Farm buildings", "icon": "", "isCorrect": false},
+                {"text": "Soil structure", "icon": "🌱", "isCorrect": true},
+                {"text": "Farm animals", "icon": "", "isCorrect": false},
+                {"text": "Market prices", "icon": "", "isCorrect": false}
             ],
-            explanation: "Pesticidy, umělá hnojiva a utužení půdy negativně ovlivňují půdní organismy."
+            "explanation": "Not plowing keeps soil intact and organisms alive."
         },
         {
-            question: "Actinomycety jsou:",
-            type: "multiple_choice",
-            options: [
-                { text: "Bakterie s houbovitým růstem", icon: "🦠", isCorrect: true },
-                { text: "Druh žížal", icon: "🪱", isCorrect: false },
-                { text: "Plevel", icon: "🌿", isCorrect: false },
-                { text: "Hnojivo", icon: "🧪", isCorrect: false }
+            "question": "Deforestation leads to:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Better farming", "icon": "", "isCorrect": false},
+                {"text": "More erosion", "icon": "🌧️", "isCorrect": true},
+                {"text": "Stronger soil", "icon": "", "isCorrect": false},
+                {"text": "More rain", "icon": "", "isCorrect": false}
             ],
-            explanation: "Actinomycety dodávají půdě charakteristickou vůni a rozkládají těžko rozložitelné látky."
+            "explanation": "Removing trees exposes soil to rain and wind damage."
         },
         {
-            question: "Jak podpořit život v půdě?",
-            type: "multiple_choice",
-            options: [
-                { text: "Přidávat organickou hmotu, minimalizovat chemii", icon: "✅", isCorrect: true },
-                { text: "Používat více pesticidů", icon: "🧪", isCorrect: false },
-                { text: "Nechat půdu bez rostlin", icon: "🏜️", isCorrect: false },
-                { text: "Zalévat slanou vodou", icon: "🧂", isCorrect: false }
+            "question": "Healthy soil has:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "No living things", "icon": "", "isCorrect": false},
+                {"text": "Many organisms", "icon": "🪱", "isCorrect": true},
+                {"text": "Only rocks", "icon": "", "isCorrect": false},
+                {"text": "Lots of plastic", "icon": "", "isCorrect": false}
             ],
-            explanation: "Organická hmota je potrava pro půdní život, chemie ho naopak ničí."
+            "explanation": "Billions of organisms in healthy soil help plants grow."
         }
     ],
 
-    // Level 10 - Pokročilé téma: Půda a klima
-    module1_level10: [
+    // Level 10: Advanced Soil Management
+    "module1_level10": [
         {
-            question: "Půda může ukládat:",
-            type: "multiple_choice",
-            options: [
-                { text: "Uhlík z atmosféry", icon: "🌍", isCorrect: true },
-                { text: "Pouze vodu", icon: "💧", isCorrect: false },
-                { text: "Pouze živiny", icon: "🧪", isCorrect: false },
-                { text: "Nic", icon: "❌", isCorrect: false }
+            "question": "Soil testing reveals:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Soil age", "icon": "", "isCorrect": false},
+                {"text": "Nutrient levels and pH", "icon": "🧪", "isCorrect": true},
+                {"text": "Soil color only", "icon": "", "isCorrect": false},
+                {"text": "Weather forecast", "icon": "", "isCorrect": false}
             ],
-            explanation: "Půda je významný zásobník uhlíku - obsahuje více C než atmosféra a vegetace dohromady."
+            "explanation": "Tests show what nutrients soil has or needs."
         },
         {
-            question: "Co je sekvestrace uhlíku?",
-            type: "multiple_choice",
-            options: [
-                { text: "Ukládání uhlíku do půdy", icon: "⬇️", isCorrect: true },
-                { text: "Uvolňování CO2", icon: "☁️", isCorrect: false },
-                { text: "Spalování biomasy", icon: "🔥", isCorrect: false },
-                { text: "Druh hnojiva", icon: "🧪", isCorrect: false }
+            "question": "Soil amendment means:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Removing soil", "icon": "", "isCorrect": false},
+                {"text": "Adding materials to improve soil", "icon": "➕", "isCorrect": true},
+                {"text": "Painting soil", "icon": "", "isCorrect": false},
+                {"text": "Selling soil", "icon": "", "isCorrect": false}
             ],
-            explanation: "Sekvestrace uhlíku je proces, kdy se CO2 z atmosféry ukládá do půdy jako organická hmota."
+            "explanation": "Amendments like compost or lime improve soil quality."
         },
         {
-            question: "Jak zemědělství přispívá ke změně klimatu?",
-            type: "multiple_choice",
-            options: [
-                { text: "Emisemi N2O, CH4 a CO2", icon: "☁️", isCorrect: true },
-                { text: "Nijak", icon: "❌", isCorrect: false },
-                { text: "Pouze pozitivně", icon: "✅", isCorrect: false },
-                { text: "Pouze zavlažováním", icon: "💧", isCorrect: false }
+            "question": "Lime is added to soil to:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Add color", "icon": "", "isCorrect": false},
+                {"text": "Reduce acidity", "icon": "⬆️", "isCorrect": true},
+                {"text": "Add nitrogen", "icon": "", "isCorrect": false},
+                {"text": "Kill plants", "icon": "", "isCorrect": false}
             ],
-            explanation: "Zemědělství produkuje skleníkové plyny z hnojiv, chovu zvířat a zpracování půdy."
+            "explanation": "Lime raises pH in acidic soils for better crop growth."
         },
         {
-            question: "Regenerativní zemědělství se zaměřuje na:",
-            type: "multiple_choice",
-            options: [
-                { text: "Obnovu zdraví půdy a ukládání uhlíku", icon: "♻️", isCorrect: true },
-                { text: "Maximalizaci výnosů", icon: "📈", isCorrect: false },
-                { text: "Používání více chemie", icon: "🧪", isCorrect: false },
-                { text: "Monokulturní pěstování", icon: "🌾", isCorrect: false }
+            "question": "Soil compaction is bad because:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Soil gets too soft", "icon": "", "isCorrect": false},
+                {"text": "Roots can't penetrate", "icon": "🚫", "isCorrect": true},
+                {"text": "Soil becomes too wet", "icon": "", "isCorrect": false},
+                {"text": "Weeds grow better", "icon": "", "isCorrect": false}
             ],
-            explanation: "Regenerativní zemědělství obnovuje půdní ekosystém a pomáhá zmírňovat klimatickou změnu."
+            "explanation": "Compacted soil blocks root growth and water movement."
         },
         {
-            question: "Biochar je:",
-            type: "multiple_choice",
-            options: [
-                { text: "Uhlík z pyrolýzy biomasy pro půdu", icon: "⬛", isCorrect: true },
-                { text: "Biologické hnojivo", icon: "🌿", isCorrect: false },
-                { text: "Druh kompostu", icon: "♻️", isCorrect: false },
-                { text: "Pesticid", icon: "🧪", isCorrect: false }
+            "question": "Biochar helps soil by:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Adding salt", "icon": "", "isCorrect": false},
+                {"text": "Holding nutrients and water", "icon": "🔥", "isCorrect": true},
+                {"text": "Removing all life", "icon": "", "isCorrect": false},
+                {"text": "Making soil white", "icon": "", "isCorrect": false}
             ],
-            explanation: "Biochar je stabilní forma uhlíku, která zlepšuje půdu a váže uhlík na tisíce let."
+            "explanation": "Charcoal-like biochar stores nutrients and improves structure."
         },
         {
-            question: "Agrolesnictví kombinuje:",
-            type: "multiple_choice",
-            options: [
-                { text: "Stromy s plodinami nebo zvířaty", icon: "🌳", isCorrect: true },
-                { text: "Pouze stromy", icon: "🌲", isCorrect: false },
-                { text: "Pouze plodiny", icon: "🌾", isCorrect: false },
-                { text: "Pouze zvířata", icon: "🐄", isCorrect: false }
+            "question": "Mycorrhizae are:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Harmful bacteria", "icon": "", "isCorrect": false},
+                {"text": "Beneficial fungi with roots", "icon": "🍄", "isCorrect": true},
+                {"text": "Type of fertilizer", "icon": "", "isCorrect": false},
+                {"text": "Weed seeds", "icon": "", "isCorrect": false}
             ],
-            explanation: "Agrolesnictví integruje stromy do zemědělských systémů pro větší udržitelnost."
+            "explanation": "These fungi partner with roots to share nutrients."
         },
         {
-            question: "Cover crops (pokryvné plodiny) pomáhají:",
-            type: "multiple_choice",
-            options: [
-                { text: "Chránit půdu a vázat uhlík", icon: "🌱", isCorrect: true },
-                { text: "Pouze vypadat hezky", icon: "🎨", isCorrect: false },
-                { text: "Zvyšovat erozi", icon: "💨", isCorrect: false },
-                { text: "Ničit škůdce chemicky", icon: "🧪", isCorrect: false }
+            "question": "Soil salinity means too much:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Water", "icon": "", "isCorrect": false},
+                {"text": "Salt", "icon": "🧂", "isCorrect": true},
+                {"text": "Nitrogen", "icon": "", "isCorrect": false},
+                {"text": "Organic matter", "icon": "", "isCorrect": false}
             ],
-            explanation: "Pokryvné plodiny chrání půdu před erozí, udržují vlhkost a přidávají organickou hmotu."
+            "explanation": "High salt levels damage plants and reduce yields."
         },
         {
-            question: "Půdní respirace je:",
-            type: "multiple_choice",
-            options: [
-                { text: "Uvolňování CO2 z půdy", icon: "☁️", isCorrect: true },
-                { text: "Dýchání rostlin", icon: "🌿", isCorrect: false },
-                { text: "Absorpce kyslíku", icon: "💨", isCorrect: false },
-                { text: "Fotosyntéza", icon: "☀️", isCorrect: false }
+            "question": "Vermiculture uses:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Chemicals", "icon": "", "isCorrect": false},
+                {"text": "Worms to make compost", "icon": "🪱", "isCorrect": true},
+                {"text": "Fire", "icon": "", "isCorrect": false},
+                {"text": "Machines", "icon": "", "isCorrect": false}
             ],
-            explanation: "Půdní respirace je metabolická činnost organismů v půdě, která uvolňuje CO2."
+            "explanation": "Worms break down organic matter into rich fertilizer."
         },
         {
-            question: "No-till farming (bezorebné) snižuje:",
-            type: "multiple_choice",
-            options: [
-                { text: "Emise CO2 z půdy", icon: "⬇️", isCorrect: true },
-                { text: "Výnosy", icon: "📉", isCorrect: false },
-                { text: "Obsah humusu", icon: "🌿", isCorrect: false },
-                { text: "Počet žížal", icon: "🪱", isCorrect: false }
+            "question": "Soil structure refers to:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Soil color", "icon": "", "isCorrect": false},
+                {"text": "How particles are arranged", "icon": "🔬", "isCorrect": true},
+                {"text": "Soil temperature", "icon": "", "isCorrect": false},
+                {"text": "Soil smell", "icon": "", "isCorrect": false}
             ],
-            explanation: "Bez orby zůstává uhlík v půdě a neoxiduje se při kontaktu se vzduchem."
+            "explanation": "Structure affects water flow, aeration, and root growth."
         },
         {
-            question: "Půda zdravá pro klima má:",
-            type: "multiple_choice",
-            options: [
-                { text: "Vysoký obsah organické hmoty a biodiverzitu", icon: "✅", isCorrect: true },
-                { text: "Hodně chemických hnojiv", icon: "🧪", isCorrect: false },
-                { text: "Žádný život", icon: "☠️", isCorrect: false },
-                { text: "Pouze minerály", icon: "💎", isCorrect: false }
+            "question": "Sustainable soil management means:",
+            "type": "multiple_choice",
+            "options": [
+                {"text": "Using only chemicals", "icon": "", "isCorrect": false},
+                {"text": "Keeping soil healthy for future", "icon": "♻️", "isCorrect": true},
+                {"text": "Maximizing short-term yields", "icon": "", "isCorrect": false},
+                {"text": "Never farming", "icon": "", "isCorrect": false}
             ],
-            explanation: "Zdravá půda bohatá na organickou hmotu a život efektivně ukládá uhlík."
+            "explanation": "Sustainable practices maintain soil health long-term."
         }
     ]
 };
 
-// Export do window
+// Make available globally
 window.MODULE1_QUESTIONS = MODULE1_QUESTIONS;
